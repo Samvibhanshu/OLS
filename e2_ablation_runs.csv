@@ -1,0 +1,141 @@
+seed,variant,err
+0,Full: lineage + independence + synthetic,0.017389686489098388
+0,Lineage only,0.010732985787694466
+0,Lineage + synthetic,0.013750697060248923
+0,Lineage + synthetic + coordination (gamma=0.3),0.017532838372000897
+0,Soft (harmonic) provenance weighting,0.012744154738943192
+0,No lineage (message-level only),0.005926628991301114
+0,Oracle lineage (ground-truth parents),0.017381829857072206
+1,Full: lineage + independence + synthetic,0.004293332822026014
+1,Lineage only,0.009479141919001732
+1,Lineage + synthetic,0.007943529489735007
+1,Lineage + synthetic + coordination (gamma=0.3),0.004043441835423267
+1,Soft (harmonic) provenance weighting,0.011328434452057251
+1,No lineage (message-level only),0.038678761327905486
+1,Oracle lineage (ground-truth parents),0.00271971754806985
+2,Full: lineage + independence + synthetic,0.014601020730998254
+2,Lineage only,0.009997017993338408
+2,Lineage + synthetic,0.012297768654337848
+2,Lineage + synthetic + coordination (gamma=0.3),0.014723577658690923
+2,Soft (harmonic) provenance weighting,0.00906235050297266
+2,No lineage (message-level only),0.010048225696544871
+2,Oracle lineage (ground-truth parents),0.01379802367282007
+3,Full: lineage + independence + synthetic,0.0067009764853498965
+3,Lineage only,0.010306290901977516
+3,Lineage + synthetic,0.007064099620940456
+3,Lineage + synthetic + coordination (gamma=0.3),0.006629273682340647
+3,Soft (harmonic) provenance weighting,0.01521807636823258
+3,No lineage (message-level only),0.03588620904097678
+3,Oracle lineage (ground-truth parents),0.0068892157873871596
+4,Full: lineage + independence + synthetic,0.005664822849701656
+4,Lineage only,0.010091277586187053
+4,Lineage + synthetic,0.009056241909916607
+4,Lineage + synthetic + coordination (gamma=0.3),0.005412246811265259
+4,Soft (harmonic) provenance weighting,0.011344012521261493
+4,No lineage (message-level only),0.027754650974357253
+4,Oracle lineage (ground-truth parents),0.004406269784771988
+5,Full: lineage + independence + synthetic,0.011600324971348108
+5,Lineage only,0.009295244369991795
+5,Lineage + synthetic,0.01017924682047533
+5,Lineage + synthetic + coordination (gamma=0.3),0.011793710375017752
+5,Soft (harmonic) provenance weighting,0.005999782845099194
+5,No lineage (message-level only),0.01583231665197718
+5,Oracle lineage (ground-truth parents),0.012027469633665938
+6,Full: lineage + independence + synthetic,0.016274986133963082
+6,Lineage only,0.010754934457903098
+6,Lineage + synthetic,0.01334224876359788
+6,Lineage + synthetic + coordination (gamma=0.3),0.0163840176019186
+6,Soft (harmonic) provenance weighting,0.010327147710926077
+6,No lineage (message-level only),0.011825119852018867
+6,Oracle lineage (ground-truth parents),0.016674550428288776
+7,Full: lineage + independence + synthetic,0.011098695360071215
+7,Lineage only,0.006839942291674422
+7,Lineage + synthetic,0.008272644393624184
+7,Lineage + synthetic + coordination (gamma=0.3),0.011169519791935784
+7,Soft (harmonic) provenance weighting,0.00612610338260508
+7,No lineage (message-level only),0.010584718186055941
+7,Oracle lineage (ground-truth parents),0.01123067925837623
+8,Full: lineage + independence + synthetic,0.017328124973400166
+8,Lineage only,0.019400970394000933
+8,Lineage + synthetic,0.01732947721397471
+8,Lineage + synthetic + coordination (gamma=0.3),0.017356197158521353
+8,Soft (harmonic) provenance weighting,0.020832874817977493
+8,No lineage (message-level only),0.03371214181219362
+8,Oracle lineage (ground-truth parents),0.01687503080556238
+9,Full: lineage + independence + synthetic,0.006410315331797867
+9,Lineage only,0.007941368209509747
+9,Lineage + synthetic,0.006076133360920916
+9,Lineage + synthetic + coordination (gamma=0.3),0.006497027314509296
+9,Soft (harmonic) provenance weighting,0.008553874599363132
+9,No lineage (message-level only),0.035013837609585874
+9,Oracle lineage (ground-truth parents),0.00649491488506701
+10,Full: lineage + independence + synthetic,0.006129948047858602
+10,Lineage only,0.0034446606338554564
+10,Lineage + synthetic,0.0043206050178267175
+10,Lineage + synthetic + coordination (gamma=0.3),0.006276780376861718
+10,Soft (harmonic) provenance weighting,0.004313525420747255
+10,No lineage (message-level only),0.02472056686586019
+10,Oracle lineage (ground-truth parents),0.0074190154757539095
+11,Full: lineage + independence + synthetic,0.013908648514173505
+11,Lineage only,0.010796631473372592
+11,Lineage + synthetic,0.012514236746289875
+11,Lineage + synthetic + coordination (gamma=0.3),0.014022530624981239
+11,Soft (harmonic) provenance weighting,0.008815455740526418
+11,No lineage (message-level only),0.01602855619721963
+11,Oracle lineage (ground-truth parents),0.014625777725152223
+12,Full: lineage + independence + synthetic,0.009842845355161195
+12,Lineage only,0.006555535883202429
+12,Lineage + synthetic,0.0069945952893396834
+12,Lineage + synthetic + coordination (gamma=0.3),0.010015997461049003
+12,Soft (harmonic) provenance weighting,0.006300698428327534
+12,No lineage (message-level only),0.02095719446109995
+12,Oracle lineage (ground-truth parents),0.01017264648511354
+13,Full: lineage + independence + synthetic,0.0026214640440558046
+13,Lineage only,0.0009097234156635325
+13,Lineage + synthetic,0.0017237506295389171
+13,Lineage + synthetic + coordination (gamma=0.3),0.0027611876242103206
+13,Soft (harmonic) provenance weighting,0.00019711433464247863
+13,No lineage (message-level only),0.015965892477804777
+13,Oracle lineage (ground-truth parents),0.0032683393738581756
+14,Full: lineage + independence + synthetic,0.009415945695447486
+14,Lineage only,0.007931715586484867
+14,Lineage + synthetic,0.007346564058470867
+14,Lineage + synthetic + coordination (gamma=0.3),0.009537173746618471
+14,Soft (harmonic) provenance weighting,0.0064245798121127795
+14,No lineage (message-level only),0.022481813241133936
+14,Oracle lineage (ground-truth parents),0.009915040344950915
+15,Full: lineage + independence + synthetic,0.010147240912378258
+15,Lineage only,0.003171576979602575
+15,Lineage + synthetic,0.00641077652875835
+15,Lineage + synthetic + coordination (gamma=0.3),0.010321040794910058
+15,Soft (harmonic) provenance weighting,0.0028963140028515633
+15,No lineage (message-level only),0.018923019448171763
+15,Oracle lineage (ground-truth parents),0.010842562187961424
+16,Full: lineage + independence + synthetic,0.006579132397821402
+16,Lineage only,0.004113817265094355
+16,Lineage + synthetic,0.0038061530542640443
+16,Lineage + synthetic + coordination (gamma=0.3),0.006775339613334097
+16,Soft (harmonic) provenance weighting,0.004594909923772567
+16,No lineage (message-level only),0.021953858415469846
+16,Oracle lineage (ground-truth parents),0.007141535740746691
+17,Full: lineage + independence + synthetic,0.018752010627907406
+17,Lineage only,0.016240803817560767
+17,Lineage + synthetic,0.01669367938884911
+17,Lineage + synthetic + coordination (gamma=0.3),0.01875162602477981
+17,Soft (harmonic) provenance weighting,0.016504307434356852
+17,No lineage (message-level only),0.01449232956112434
+17,Oracle lineage (ground-truth parents),0.01866889063403604
+18,Full: lineage + independence + synthetic,0.007086458501367715
+18,Lineage only,0.004119112501012712
+18,Lineage + synthetic,0.004667328687936539
+18,Lineage + synthetic + coordination (gamma=0.3),0.0073543686101146255
+18,Soft (harmonic) provenance weighting,0.003236151178156149
+18,No lineage (message-level only),0.018060064724561314
+18,Oracle lineage (ground-truth parents),0.008130790171091723
+19,Full: lineage + independence + synthetic,0.006775373857022149
+19,Lineage only,0.009670904321345347
+19,Lineage + synthetic,0.00970323462073508
+19,Lineage + synthetic + coordination (gamma=0.3),0.006632967284086022
+19,Soft (harmonic) provenance weighting,0.01142144251996799
+19,No lineage (message-level only),0.03422163021519245
+19,Oracle lineage (ground-truth parents),0.005939093343131807

@@ -1,0 +1,513 @@
+seed,phase,topic,system,err,family_share,cite_family
+0,before,0,Naive RAG + delete exposed posts,0.19104634112704022,0.09999999999999998,0.0
+0,before,0,Naive RAG + delete whole family (oracle),0.19104634112704022,0.09999999999999998,0.0
+0,before,0,Text dedup + provenance score,0.06716458927501959,0.1970896449241586,0.25
+0,before,0,Lineage-aware RAG (selective rollback),0.07001177381146347,0.22603478214564915,0.125
+0,before,1,Naive RAG + delete exposed posts,0.13284345497015548,0.18333333333333332,0.0
+0,before,1,Naive RAG + delete whole family (oracle),0.13284345497015548,0.18333333333333332,0.0
+0,before,1,Text dedup + provenance score,0.06601171133032066,0.29977615240077315,0.125
+0,before,1,Lineage-aware RAG (selective rollback),0.060997696773101864,0.29612053789103543,0.25
+0,before,2,Naive RAG + delete exposed posts,0.1260158227696809,0.05333333333333334,0.0
+0,before,2,Naive RAG + delete whole family (oracle),0.1260158227696809,0.05333333333333334,0.0
+0,before,2,Text dedup + provenance score,0.09854312021034474,0.22228853036129123,0.25
+0,before,2,Lineage-aware RAG (selective rollback),0.10181398076537412,0.24555100910095806,0.25
+0,before,3,Naive RAG + delete exposed posts,0.0523836015333429,0.03666666666666667,0.0
+0,before,3,Naive RAG + delete whole family (oracle),0.0523836015333429,0.03666666666666667,0.0
+0,before,3,Text dedup + provenance score,0.09255076764402329,0.2300488306861625,0.125
+0,before,3,Lineage-aware RAG (selective rollback),0.09425741642990161,0.2279188737279755,0.125
+0,before,4,Naive RAG + delete exposed posts,0.09265667231873677,0.22666666666666666,0.125
+0,before,4,Naive RAG + delete whole family (oracle),0.09265667231873677,0.22666666666666666,0.125
+0,before,4,Text dedup + provenance score,0.0920150925446998,0.2372000805751697,0.0
+0,before,4,Lineage-aware RAG (selective rollback),0.10383003939677124,0.2353545930378786,0.125
+0,before,5,Naive RAG + delete exposed posts,0.062449717072900465,0.14,0.125
+0,before,5,Naive RAG + delete whole family (oracle),0.062449717072900465,0.14,0.125
+0,before,5,Text dedup + provenance score,0.05079249915430814,0.1732767051051306,0.375
+0,before,5,Lineage-aware RAG (selective rollback),0.05477589339893099,0.17952836996330096,0.375
+0,before,6,Naive RAG + delete exposed posts,0.05380621734526886,0.21000000000000002,0.375
+0,before,6,Naive RAG + delete whole family (oracle),0.05380621734526886,0.21000000000000002,0.375
+0,before,6,Text dedup + provenance score,0.07842416182993,0.20656237765689783,0.25
+0,before,6,Lineage-aware RAG (selective rollback),0.06708823146519305,0.193408843836078,0.125
+0,before,7,Naive RAG + delete exposed posts,0.07993601841021075,0.04,0.0
+0,before,7,Naive RAG + delete whole family (oracle),0.07993601841021075,0.04,0.0
+0,before,7,Text dedup + provenance score,0.13752300504943454,0.24111284901114022,0.25
+0,before,7,Lineage-aware RAG (selective rollback),0.16076265698551978,0.25243129436866163,0.25
+0,after,0,Naive RAG + delete exposed posts,0.1939084994411824,0.03225806451612903,0.0
+0,after,0,Naive RAG + delete whole family (oracle),0.1901413132330044,0.0,0.0
+0,after,0,Text dedup + provenance score,0.05082697646500575,0.041613159010856875,0.0
+0,after,0,Lineage-aware RAG (selective rollback),0.05582567055604866,0.040996841620063416,0.125
+0,after,1,Naive RAG + delete exposed posts,0.1255845661441935,0.03162055335968379,0.0
+0,after,1,Naive RAG + delete whole family (oracle),0.12947457162862364,0.0,0.0
+0,after,1,Text dedup + provenance score,0.04746959783709026,0.06218415575822778,0.0
+0,after,1,Lineage-aware RAG (selective rollback),0.037901323626224115,0.05928871659139907,0.0
+0,after,2,Naive RAG + delete exposed posts,0.1275476978767861,0.006993006993006993,0.0
+0,after,2,Naive RAG + delete whole family (oracle),0.12974103773188567,0.0,0.0
+0,after,2,Text dedup + provenance score,0.09012165743788286,0.009962342000623221,0.0
+0,after,2,Lineage-aware RAG (selective rollback),0.09172859106854701,0.011720316301309751,0.0
+0,after,3,Naive RAG + delete exposed posts,0.04600996000090107,0.010273972602739725,0.0
+0,after,3,Naive RAG + delete whole family (oracle),0.0478524103202016,0.0,0.0
+0,after,3,Text dedup + provenance score,0.09030241169263373,0.067010832169667,0.0
+0,after,3,Lineage-aware RAG (selective rollback),0.09198606388019115,0.06039933729841708,0.0
+0,after,4,Naive RAG + delete exposed posts,0.056826465035343776,0.02928870292887029,0.125
+0,after,4,Naive RAG + delete whole family (oracle),0.046527659387817916,0.0,0.0
+0,after,4,Text dedup + provenance score,0.05686170466306731,0.024361304256761373,0.0
+0,after,4,Lineage-aware RAG (selective rollback),0.06761479521204047,0.021364672252608567,0.0
+0,after,5,Naive RAG + delete exposed posts,0.05803352667529292,0.019011406844106463,0.0
+0,after,5,Naive RAG + delete whole family (oracle),0.05636327901145842,0.0,0.0
+0,after,5,Text dedup + provenance score,0.019310015524298285,0.01458657964575761,0.0
+0,after,5,Lineage-aware RAG (selective rollback),0.02129777559282367,0.015972442392654766,0.0
+0,after,6,Naive RAG + delete exposed posts,0.018452907095183213,0.08494208494208494,0.375
+0,after,6,Naive RAG + delete whole family (oracle),0.006805232910382181,0.0,0.0
+0,after,6,Text dedup + provenance score,0.054871717811433685,0.04913840678199037,0.0
+0,after,6,Lineage-aware RAG (selective rollback),0.04159641390543323,0.03858079992560546,0.0
+0,after,7,Naive RAG + delete exposed posts,0.07368102839380927,0.010309278350515464,0.0
+0,after,7,Naive RAG + delete whole family (oracle),0.0736726958390993,0.0,0.0
+0,after,7,Text dedup + provenance score,0.11179638195339595,0.0325921059254612,0.0
+0,after,7,Lineage-aware RAG (selective rollback),0.12984881514542548,0.02032738270849957,0.0
+1,before,0,Naive RAG + delete exposed posts,0.16954441574588644,0.12999999999999998,0.25
+1,before,0,Naive RAG + delete whole family (oracle),0.16954441574588644,0.12999999999999998,0.25
+1,before,0,Text dedup + provenance score,0.12389650964557775,0.2213099562906009,0.125
+1,before,0,Lineage-aware RAG (selective rollback),0.13332786798028695,0.2268260652686377,0.125
+1,before,1,Naive RAG + delete exposed posts,0.24196474519426553,0.0033333333333333335,0.0
+1,before,1,Naive RAG + delete whole family (oracle),0.24196474519426553,0.0033333333333333335,0.0
+1,before,1,Text dedup + provenance score,0.33090969735844566,0.07964733019424003,0.125
+1,before,1,Lineage-aware RAG (selective rollback),0.2932910392600747,0.08474277338724806,0.125
+1,before,2,Naive RAG + delete exposed posts,0.062277779269341305,0.21666666666666667,0.0
+1,before,2,Naive RAG + delete whole family (oracle),0.062277779269341305,0.21666666666666667,0.0
+1,before,2,Text dedup + provenance score,0.056065831429370605,0.21860660224057424,0.0
+1,before,2,Lineage-aware RAG (selective rollback),0.05731383834011172,0.221720435032704,0.0
+1,before,3,Naive RAG + delete exposed posts,0.021903360589496684,0.04,0.0
+1,before,3,Naive RAG + delete whole family (oracle),0.021903360589496684,0.04,0.0
+1,before,3,Text dedup + provenance score,0.10575091563863931,0.21417038671212152,0.125
+1,before,3,Lineage-aware RAG (selective rollback),0.09374762692834021,0.21192186100659763,0.125
+1,before,4,Naive RAG + delete exposed posts,0.10615162664827563,0.2733333333333333,0.625
+1,before,4,Naive RAG + delete whole family (oracle),0.10615162664827563,0.2733333333333333,0.625
+1,before,4,Text dedup + provenance score,0.10073039191205752,0.2168920204556271,0.125
+1,before,4,Lineage-aware RAG (selective rollback),0.10451565310231037,0.24336211735125393,0.25
+1,before,5,Naive RAG + delete exposed posts,0.09855373481036608,0.08333333333333333,0.0
+1,before,5,Naive RAG + delete whole family (oracle),0.09855373481036608,0.08333333333333333,0.0
+1,before,5,Text dedup + provenance score,0.0850116841029718,0.2012601194204922,0.125
+1,before,5,Lineage-aware RAG (selective rollback),0.07016695252027697,0.20103528240398233,0.0
+1,before,6,Naive RAG + delete exposed posts,0.03835002839285534,0.08333333333333334,0.125
+1,before,6,Naive RAG + delete whole family (oracle),0.03835002839285534,0.08333333333333334,0.125
+1,before,6,Text dedup + provenance score,0.04692015595942184,0.15586093666180056,0.125
+1,before,6,Lineage-aware RAG (selective rollback),0.03959960469321738,0.15987183923782367,0.125
+1,before,7,Naive RAG + delete exposed posts,0.17470936285238148,0.16333333333333336,0.0
+1,before,7,Naive RAG + delete whole family (oracle),0.17470936285238148,0.16333333333333336,0.0
+1,before,7,Text dedup + provenance score,0.08589999898718315,0.18194079687349726,0.25
+1,before,7,Lineage-aware RAG (selective rollback),0.08679297448519532,0.20204963064745388,0.375
+1,after,0,Naive RAG + delete exposed posts,0.15947520648781435,0.033333333333333326,0.25
+1,after,0,Naive RAG + delete whole family (oracle),0.15685784652946075,0.0,0.0
+1,after,0,Text dedup + provenance score,0.09422528986808346,0.0273379808222643,0.0
+1,after,0,Lineage-aware RAG (selective rollback),0.10052925349538766,0.025575749917131137,0.0
+1,after,1,Naive RAG + delete exposed posts,0.2426082705954909,0.0,0.0
+1,after,1,Naive RAG + delete whole family (oracle),0.2426082705954909,0.0,0.0
+1,after,1,Text dedup + provenance score,0.3541601641369843,0.003592803453078408,0.0
+1,after,1,Lineage-aware RAG (selective rollback),0.3148353101299398,0.0038429697722497345,0.0
+1,after,2,Naive RAG + delete exposed posts,0.04287221605832539,0.05241935483870967,0.0
+1,after,2,Naive RAG + delete whole family (oracle),0.039922412578970945,0.0,0.0
+1,after,2,Text dedup + provenance score,0.0275006484628168,0.03838879120968962,0.0
+1,after,2,Lineage-aware RAG (selective rollback),0.024268931908947272,0.031691146955226124,0.0
+1,after,3,Naive RAG + delete exposed posts,0.02010706166925255,0.010309278350515464,0.0
+1,after,3,Naive RAG + delete whole family (oracle),0.01798432752656781,0.0,0.0
+1,after,3,Text dedup + provenance score,0.13206436232307384,0.05190364698358431,0.0
+1,after,3,Lineage-aware RAG (selective rollback),0.11794904223036365,0.04381130723013175,0.0
+1,after,4,Naive RAG + delete exposed posts,0.06607207366578902,0.07627118644067796,0.5
+1,after,4,Naive RAG + delete whole family (oracle),0.04699593686514758,0.0,0.0
+1,after,4,Text dedup + provenance score,0.06152965337524258,0.019876876134185324,0.0
+1,after,4,Lineage-aware RAG (selective rollback),0.06226140108662451,0.023357676894868493,0.0
+1,after,5,Naive RAG + delete exposed posts,0.09207411041495464,0.014336917562724014,0.0
+1,after,5,Naive RAG + delete whole family (oracle),0.09201709600135789,0.0,0.0
+1,after,5,Text dedup + provenance score,0.06087307684549473,0.022410073303569124,0.0
+1,after,5,Lineage-aware RAG (selective rollback),0.051684898062576756,0.03023302519701419,0.0
+1,after,6,Naive RAG + delete exposed posts,0.025856041921940742,0.01079136690647482,0.0
+1,after,6,Naive RAG + delete whole family (oracle),0.020906734355912365,0.0,0.0
+1,after,6,Text dedup + provenance score,0.024751362181270303,0.008325863528216678,0.0
+1,after,6,Lineage-aware RAG (selective rollback),0.02838371622281896,0.008494680974583911,0.0
+1,after,7,Naive RAG + delete exposed posts,0.16757453933325223,0.04198473282442748,0.0
+1,after,7,Naive RAG + delete whole family (oracle),0.1659885837648828,0.0,0.0
+1,after,7,Text dedup + provenance score,0.06187099650631886,0.022323755938585488,0.0
+1,after,7,Lineage-aware RAG (selective rollback),0.05870832667131898,0.02802003521885523,0.0
+2,before,0,Naive RAG + delete exposed posts,0.09854606330622795,0.07333333333333333,0.0
+2,before,0,Naive RAG + delete whole family (oracle),0.09854606330622795,0.07333333333333333,0.0
+2,before,0,Text dedup + provenance score,0.12446172270448934,0.3134775705120693,0.25
+2,before,0,Lineage-aware RAG (selective rollback),0.1308621829898405,0.3036691018888906,0.25
+2,before,1,Naive RAG + delete exposed posts,0.1563771862893676,0.006666666666666667,0.0
+2,before,1,Naive RAG + delete whole family (oracle),0.1563771862893676,0.006666666666666667,0.0
+2,before,1,Text dedup + provenance score,0.0341749966816344,0.1836534102861349,0.25
+2,before,1,Lineage-aware RAG (selective rollback),0.14227831232319574,0.21990529883734464,0.25
+2,before,2,Naive RAG + delete exposed posts,0.020720433729983806,0.14,0.375
+2,before,2,Naive RAG + delete whole family (oracle),0.020720433729983806,0.14,0.375
+2,before,2,Text dedup + provenance score,0.0349567355387114,0.22889635892448917,0.25
+2,before,2,Lineage-aware RAG (selective rollback),0.036676145889245365,0.2189497398604266,0.125
+2,before,3,Naive RAG + delete exposed posts,0.11460178984714478,0.22000000000000003,0.125
+2,before,3,Naive RAG + delete whole family (oracle),0.11460178984714478,0.22000000000000003,0.125
+2,before,3,Text dedup + provenance score,0.09202929561969667,0.255948599334173,0.25
+2,before,3,Lineage-aware RAG (selective rollback),0.09212936408402833,0.2752614699724079,0.25
+2,before,4,Naive RAG + delete exposed posts,0.17764354762290133,0.12666666666666665,0.0
+2,before,4,Naive RAG + delete whole family (oracle),0.17764354762290133,0.12666666666666665,0.0
+2,before,4,Text dedup + provenance score,0.12205201534656857,0.2038749234691702,0.0
+2,before,4,Lineage-aware RAG (selective rollback),0.1399726549819441,0.21986969264076675,0.0
+2,before,5,Naive RAG + delete exposed posts,0.07629284996112501,0.08999999999999998,0.0
+2,before,5,Naive RAG + delete whole family (oracle),0.07629284996112501,0.08999999999999998,0.0
+2,before,5,Text dedup + provenance score,0.042147926364868915,0.27912232231556827,0.375
+2,before,5,Lineage-aware RAG (selective rollback),0.043739003173537766,0.31449693926130295,0.375
+2,before,6,Naive RAG + delete exposed posts,0.051885296413243964,0.09,0.0
+2,before,6,Naive RAG + delete whole family (oracle),0.051885296413243964,0.09,0.0
+2,before,6,Text dedup + provenance score,0.01175755983667065,0.14459212277154299,0.125
+2,before,6,Lineage-aware RAG (selective rollback),0.01869550361387498,0.16868896974601533,0.125
+2,before,7,Naive RAG + delete exposed posts,0.06926931622918991,0.20666666666666667,0.125
+2,before,7,Naive RAG + delete whole family (oracle),0.06926931622918991,0.20666666666666667,0.125
+2,before,7,Text dedup + provenance score,0.047470851994082464,0.19626691575177402,0.25
+2,before,7,Lineage-aware RAG (selective rollback),0.04263118944966171,0.20098819297349724,0.25
+2,after,0,Naive RAG + delete exposed posts,0.08916612575818292,0.014184397163120567,0.0
+2,after,0,Naive RAG + delete whole family (oracle),0.08935898369220854,0.0,0.0
+2,after,0,Text dedup + provenance score,0.07991548830310136,0.05001069174161426,0.0
+2,after,0,Lineage-aware RAG (selective rollback),0.09328818582586314,0.06989733718299214,0.0
+2,after,1,Naive RAG + delete exposed posts,0.15787996419892966,0.0,0.0
+2,after,1,Naive RAG + delete whole family (oracle),0.15787996419892966,0.0,0.0
+2,after,1,Text dedup + provenance score,0.0598676748675582,0.007661573454975832,0.0
+2,after,1,Lineage-aware RAG (selective rollback),0.2067371013601267,0.009534206167569802,0.0
+2,after,2,Naive RAG + delete exposed posts,0.02290027773889891,0.022727272727272728,0.25
+2,after,2,Naive RAG + delete whole family (oracle),0.026570521289921434,0.0,0.0
+2,after,2,Text dedup + provenance score,0.019426357151454632,0.025304760937674982,0.0
+2,after,2,Lineage-aware RAG (selective rollback),0.018306267733807197,0.022379830831789266,0.0
+2,after,3,Naive RAG + delete exposed posts,0.09775775739377171,0.064,0.0
+2,after,3,Naive RAG + delete whole family (oracle),0.09125398353843972,0.0,0.0
+2,after,3,Text dedup + provenance score,0.0630467909530297,0.0561799446438309,0.0
+2,after,3,Lineage-aware RAG (selective rollback),0.06043035272365366,0.06262322379180393,0.0
+2,after,4,Naive RAG + delete exposed posts,0.16564939792314354,0.007575757575757576,0.0
+2,after,4,Naive RAG + delete whole family (oracle),0.1657826239582392,0.0,0.0
+2,after,4,Text dedup + provenance score,0.08681934307571881,0.01376082264289885,0.0
+2,after,4,Lineage-aware RAG (selective rollback),0.1022948002213174,0.017218679260445634,0.0
+2,after,5,Naive RAG + delete exposed posts,0.0742055236091671,0.025,0.0
+2,after,5,Naive RAG + delete whole family (oracle),0.07166293022681655,0.0,0.0
+2,after,5,Text dedup + provenance score,0.01923475054251858,0.057026431184267014,0.0
+2,after,5,Lineage-aware RAG (selective rollback),0.03014342437759407,0.07629272901338084,0.0
+2,after,6,Naive RAG + delete exposed posts,0.04728950807573651,0.017985611510791366,0.0
+2,after,6,Naive RAG + delete whole family (oracle),0.047969545202274894,0.0,0.0
+2,after,6,Text dedup + provenance score,0.013353063175975344,0.012964121773025122,0.0
+2,after,6,Lineage-aware RAG (selective rollback),0.005185211551651664,0.02167328397537264,0.0
+2,after,7,Naive RAG + delete exposed posts,0.04478307142303051,0.05179282868525896,0.125
+2,after,7,Naive RAG + delete whole family (oracle),0.03711171726174006,0.0,0.0
+2,after,7,Text dedup + provenance score,0.01700822774396607,0.02237500734549723,0.0
+2,after,7,Lineage-aware RAG (selective rollback),0.01682676620213641,0.020710107609836766,0.0
+3,before,0,Naive RAG + delete exposed posts,0.09073227404922424,0.18333333333333335,0.125
+3,before,0,Naive RAG + delete whole family (oracle),0.09073227404922424,0.18333333333333335,0.125
+3,before,0,Text dedup + provenance score,0.09404450556032964,0.23939835216180666,0.375
+3,before,0,Lineage-aware RAG (selective rollback),0.08752208353515994,0.2298436127011757,0.25
+3,before,1,Naive RAG + delete exposed posts,0.07083055665225696,0.12,0.0
+3,before,1,Naive RAG + delete whole family (oracle),0.07083055665225696,0.12,0.0
+3,before,1,Text dedup + provenance score,0.06866467176897577,0.22448622214686292,0.125
+3,before,1,Lineage-aware RAG (selective rollback),0.07667807908544609,0.2318134945139187,0.125
+3,before,2,Naive RAG + delete exposed posts,0.08277030981254796,0.18666666666666668,0.0
+3,before,2,Naive RAG + delete whole family (oracle),0.08277030981254796,0.18666666666666668,0.0
+3,before,2,Text dedup + provenance score,0.012354308040342765,0.216677175758833,0.125
+3,before,2,Lineage-aware RAG (selective rollback),0.008125099172103356,0.22739326582448363,0.125
+3,before,3,Naive RAG + delete exposed posts,0.132184702269669,0.02666666666666667,0.0
+3,before,3,Naive RAG + delete whole family (oracle),0.132184702269669,0.02666666666666667,0.0
+3,before,3,Text dedup + provenance score,0.08695452160610527,0.25166432158964497,0.25
+3,before,3,Lineage-aware RAG (selective rollback),0.05966270659846308,0.23560493924414716,0.125
+3,before,4,Naive RAG + delete exposed posts,0.08673282809149496,0.13333333333333333,0.0
+3,before,4,Naive RAG + delete whole family (oracle),0.08673282809149496,0.13333333333333333,0.0
+3,before,4,Text dedup + provenance score,0.06734539824779526,0.21589490178449589,0.0
+3,before,4,Lineage-aware RAG (selective rollback),0.058762597880562234,0.20178698998550237,0.0
+3,before,5,Naive RAG + delete exposed posts,0.1445128921435518,0.14999999999999997,0.125
+3,before,5,Naive RAG + delete whole family (oracle),0.1445128921435518,0.14999999999999997,0.125
+3,before,5,Text dedup + provenance score,0.05296330576947986,0.24229084715906413,0.125
+3,before,5,Lineage-aware RAG (selective rollback),0.05906775235143302,0.26744180105328563,0.25
+3,before,6,Naive RAG + delete exposed posts,0.13112436890491563,0.043333333333333335,0.0
+3,before,6,Naive RAG + delete whole family (oracle),0.13112436890491563,0.043333333333333335,0.0
+3,before,6,Text dedup + provenance score,0.10507326514461784,0.24400357721909502,0.375
+3,before,6,Lineage-aware RAG (selective rollback),0.08007363969191872,0.24894238632099633,0.375
+3,before,7,Naive RAG + delete exposed posts,0.11134968701316339,0.12666666666666665,0.0
+3,before,7,Naive RAG + delete whole family (oracle),0.11134968701316339,0.12666666666666665,0.0
+3,before,7,Text dedup + provenance score,0.05034364682346126,0.16133202609814962,0.125
+3,before,7,Lineage-aware RAG (selective rollback),0.04943903586913334,0.1710814246826658,0.0
+3,after,0,Naive RAG + delete exposed posts,0.05564104596739247,0.04669260700389105,0.125
+3,after,0,Naive RAG + delete whole family (oracle),0.05159002162076551,0.0,0.0
+3,after,0,Text dedup + provenance score,0.03860766141707911,0.038731013768399755,0.125
+3,after,0,Lineage-aware RAG (selective rollback),0.03752562611813123,0.0331698846213044,0.0
+3,after,1,Naive RAG + delete exposed posts,0.050344346577601784,0.022222222222222223,0.0
+3,after,1,Naive RAG + delete whole family (oracle),0.04993120523991121,0.0,0.0
+3,after,1,Text dedup + provenance score,0.05407777894510303,0.03663377454055955,0.0
+3,after,1,Lineage-aware RAG (selective rollback),0.06239591975916567,0.04435769292419118,0.0
+3,after,2,Naive RAG + delete exposed posts,0.06980951796256135,0.043137254901960784,0.0
+3,after,2,Naive RAG + delete whole family (oracle),0.060465141015731916,0.0,0.0
+3,after,2,Text dedup + provenance score,0.05521901536804444,0.03155381486775299,0.0
+3,after,2,Lineage-aware RAG (selective rollback),0.04926340711951982,0.035202750891545315,0.0
+3,after,3,Naive RAG + delete exposed posts,0.13179801888766918,0.016835016835016835,0.0
+3,after,3,Naive RAG + delete whole family (oracle),0.12638376763537001,0.0,0.0
+3,after,3,Text dedup + provenance score,0.07542186072087652,0.15909639426116562,0.25
+3,after,3,Lineage-aware RAG (selective rollback),0.05874831417841375,0.10915247445149495,0.0
+3,after,4,Naive RAG + delete exposed posts,0.059767016163845846,0.018867924528301886,0.0
+3,after,4,Naive RAG + delete whole family (oracle),0.05555427347145639,0.0,0.0
+3,after,4,Text dedup + provenance score,0.0217283276756641,0.020478170398621966,0.0
+3,after,4,Lineage-aware RAG (selective rollback),0.01664234097281106,0.017137455705858253,0.0
+3,after,5,Naive RAG + delete exposed posts,0.1384191195540963,0.030418250950570346,0.0
+3,after,5,Naive RAG + delete whole family (oracle),0.14352861085614882,0.0,0.0
+3,after,5,Text dedup + provenance score,0.009832613936882784,0.03405358221652384,0.0
+3,after,5,Lineage-aware RAG (selective rollback),0.01867326399631586,0.041168269468092884,0.0
+3,after,6,Naive RAG + delete exposed posts,0.13126825334881043,0.006920415224913495,0.0
+3,after,6,Naive RAG + delete whole family (oracle),0.12981268230823081,0.0,0.0
+3,after,6,Text dedup + provenance score,0.09691312918197573,0.018372148090943737,0.0
+3,after,6,Lineage-aware RAG (selective rollback),0.06336001154723492,0.01268796878626152,0.0
+3,after,7,Naive RAG + delete exposed posts,0.10683213941129653,0.026022304832713755,0.0
+3,after,7,Naive RAG + delete whole family (oracle),0.10951226053739872,0.0,0.0
+3,after,7,Text dedup + provenance score,0.04755379776066171,0.027391511195907242,0.0
+3,after,7,Lineage-aware RAG (selective rollback),0.047535943464621006,0.022846148265003405,0.0
+4,before,0,Naive RAG + delete exposed posts,0.1120128605366468,0.16333333333333333,0.25
+4,before,0,Naive RAG + delete whole family (oracle),0.1120128605366468,0.16333333333333333,0.25
+4,before,0,Text dedup + provenance score,0.12279778010089451,0.22293583975171422,0.25
+4,before,0,Lineage-aware RAG (selective rollback),0.11980873680465337,0.22383383147920793,0.125
+4,before,1,Naive RAG + delete exposed posts,0.1851444395633343,0.12666666666666668,0.0
+4,before,1,Naive RAG + delete whole family (oracle),0.1851444395633343,0.12666666666666668,0.0
+4,before,1,Text dedup + provenance score,0.09285058110372686,0.2562564025821018,0.25
+4,before,1,Lineage-aware RAG (selective rollback),0.10754918067076606,0.283474822476926,0.375
+4,before,2,Naive RAG + delete exposed posts,0.10704574039276357,0.049999999999999996,0.0
+4,before,2,Naive RAG + delete whole family (oracle),0.10704574039276357,0.049999999999999996,0.0
+4,before,2,Text dedup + provenance score,0.052926993378234546,0.22559517096964332,0.0
+4,before,2,Lineage-aware RAG (selective rollback),0.04729312093365265,0.24235380607830811,0.25
+4,before,3,Naive RAG + delete exposed posts,0.0962263942622924,0.03,0.125
+4,before,3,Naive RAG + delete whole family (oracle),0.0962263942622924,0.03,0.125
+4,before,3,Text dedup + provenance score,0.07295575507297485,0.1397763116421998,0.125
+4,before,3,Lineage-aware RAG (selective rollback),0.07561369339836302,0.1458995501079386,0.125
+4,before,4,Naive RAG + delete exposed posts,0.11910566331085479,0.14333333333333334,0.0
+4,before,4,Naive RAG + delete whole family (oracle),0.11910566331085479,0.14333333333333334,0.0
+4,before,4,Text dedup + provenance score,0.052212170802979435,0.22343535994772754,0.0
+4,before,4,Lineage-aware RAG (selective rollback),0.05503398399910822,0.22096541595976124,0.0
+4,before,5,Naive RAG + delete exposed posts,0.07882860104316944,0.21000000000000002,0.0
+4,before,5,Naive RAG + delete whole family (oracle),0.07882860104316944,0.21000000000000002,0.0
+4,before,5,Text dedup + provenance score,0.04619892222280486,0.2146875715487534,0.25
+4,before,5,Lineage-aware RAG (selective rollback),0.053082342484809114,0.2260694124599775,0.375
+4,before,6,Naive RAG + delete exposed posts,0.1326365880527998,0.04666666666666667,0.25
+4,before,6,Naive RAG + delete whole family (oracle),0.1326365880527998,0.04666666666666667,0.25
+4,before,6,Text dedup + provenance score,0.1049671573043297,0.17797340805629758,0.125
+4,before,6,Lineage-aware RAG (selective rollback),0.10512975362987256,0.17421187424823256,0.125
+4,before,7,Naive RAG + delete exposed posts,0.09609922296303672,0.2433333333333333,0.25
+4,before,7,Naive RAG + delete whole family (oracle),0.09609922296303672,0.2433333333333333,0.25
+4,before,7,Text dedup + provenance score,0.05034041284421617,0.2503892579553936,0.125
+4,before,7,Lineage-aware RAG (selective rollback),0.055046052875594914,0.2597605694708246,0.0
+4,after,0,Naive RAG + delete exposed posts,0.10216360448521955,0.023346303501945526,0.25
+4,after,0,Naive RAG + delete whole family (oracle),0.10028716799079027,0.0,0.0
+4,after,0,Text dedup + provenance score,0.07798711819773785,0.023971940502408348,0.0
+4,after,0,Lineage-aware RAG (selective rollback),0.07707688717836275,0.02069140897453622,0.0
+4,after,1,Naive RAG + delete exposed posts,0.18594746047785726,0.018726591760299626,0.0
+4,after,1,Naive RAG + delete whole family (oracle),0.18570378234825155,0.0,0.0
+4,after,1,Text dedup + provenance score,0.07570880024957644,0.024458767422156406,0.0
+4,after,1,Lineage-aware RAG (selective rollback),0.0933188744230876,0.02832577440696747,0.0
+4,after,2,Naive RAG + delete exposed posts,0.10381942846567468,0.010416666666666666,0.0
+4,after,2,Naive RAG + delete whole family (oracle),0.10114872510462228,0.0,0.0
+4,after,2,Text dedup + provenance score,0.05198017249354167,0.04257767706057047,0.0
+4,after,2,Lineage-aware RAG (selective rollback),0.03721865343920225,0.05785424584424542,0.0
+4,after,3,Naive RAG + delete exposed posts,0.09500985077732654,0.013559322033898305,0.125
+4,after,3,Naive RAG + delete whole family (oracle),0.094458623524622,0.0,0.0
+4,after,3,Text dedup + provenance score,0.05967822432766352,0.021891270374437156,0.0
+4,after,3,Lineage-aware RAG (selective rollback),0.060798754256972426,0.013232996467930535,0.0
+4,after,4,Naive RAG + delete exposed posts,0.10757870732133684,0.019083969465648856,0.0
+4,after,4,Naive RAG + delete whole family (oracle),0.10656225574297581,0.0,0.0
+4,after,4,Text dedup + provenance score,0.017663235595495735,0.03177019423189587,0.0
+4,after,4,Lineage-aware RAG (selective rollback),0.020625731923188673,0.029849704155507206,0.0
+4,after,5,Naive RAG + delete exposed posts,0.061081504197726566,0.03658536585365854,0.0
+4,after,5,Naive RAG + delete whole family (oracle),0.05976682890130741,0.0,0.0
+4,after,5,Text dedup + provenance score,0.01719136350826081,0.015975537210753565,0.0
+4,after,5,Lineage-aware RAG (selective rollback),0.022395773254550194,0.016009394562742894,0.0
+4,after,6,Naive RAG + delete exposed posts,0.12983073746395474,0.013793103448275862,0.25
+4,after,6,Naive RAG + delete whole family (oracle),0.1280856466229043,0.0,0.0
+4,after,6,Text dedup + provenance score,0.09442544356307378,0.02255739723126005,0.0
+4,after,6,Lineage-aware RAG (selective rollback),0.09048699715501496,0.012377214889476386,0.0
+4,after,7,Naive RAG + delete exposed posts,0.06604917268988811,0.04219409282700422,0.25
+4,after,7,Naive RAG + delete whole family (oracle),0.05747117534522933,0.0,0.0
+4,after,7,Text dedup + provenance score,0.014936636387085839,0.03139297758015701,0.0
+4,after,7,Lineage-aware RAG (selective rollback),0.019360707190607868,0.028042147832475037,0.0
+5,before,0,Naive RAG + delete exposed posts,0.14238020078044294,0.12666666666666668,0.0
+5,before,0,Naive RAG + delete whole family (oracle),0.14238020078044294,0.12666666666666668,0.0
+5,before,0,Text dedup + provenance score,0.06492169613939372,0.22397583243607416,0.25
+5,before,0,Lineage-aware RAG (selective rollback),0.068511630380784,0.218509152256643,0.125
+5,before,1,Naive RAG + delete exposed posts,0.10643569480694919,0.10333333333333333,0.0
+5,before,1,Naive RAG + delete whole family (oracle),0.10643569480694919,0.10333333333333333,0.0
+5,before,1,Text dedup + provenance score,0.08149134682617049,0.215781876523099,0.25
+5,before,1,Lineage-aware RAG (selective rollback),0.08036448528541995,0.22838392235198407,0.375
+5,before,2,Naive RAG + delete exposed posts,0.07973437720386901,0.14666666666666667,0.125
+5,before,2,Naive RAG + delete whole family (oracle),0.07973437720386901,0.14666666666666667,0.125
+5,before,2,Text dedup + provenance score,0.05310429508832418,0.22197143237707234,0.125
+5,before,2,Lineage-aware RAG (selective rollback),0.061574218426361044,0.22655995460039502,0.0
+5,before,3,Naive RAG + delete exposed posts,0.13053650255112356,0.10666666666666666,0.125
+5,before,3,Naive RAG + delete whole family (oracle),0.13053650255112356,0.10666666666666666,0.125
+5,before,3,Text dedup + provenance score,0.12950502909994743,0.23105322047014812,0.125
+5,before,3,Lineage-aware RAG (selective rollback),0.12941905299080328,0.2223113838035493,0.25
+5,before,4,Naive RAG + delete exposed posts,0.08757680766316692,0.0,0.0
+5,before,4,Naive RAG + delete whole family (oracle),0.08757680766316692,0.0,0.0
+5,before,4,Text dedup + provenance score,0.11078258891331161,0.0,0.0
+5,before,4,Lineage-aware RAG (selective rollback),0.1271875570968715,0.0,0.0
+5,before,5,Naive RAG + delete exposed posts,0.03006908419112156,0.20666666666666667,0.125
+5,before,5,Naive RAG + delete whole family (oracle),0.03006908419112156,0.20666666666666667,0.125
+5,before,5,Text dedup + provenance score,0.05468032266406908,0.2054599109286888,0.25
+5,before,5,Lineage-aware RAG (selective rollback),0.04492813029355444,0.20646160112374995,0.125
+5,before,6,Naive RAG + delete exposed posts,0.21075519303984966,0.06333333333333334,0.125
+5,before,6,Naive RAG + delete whole family (oracle),0.21075519303984966,0.06333333333333334,0.125
+5,before,6,Text dedup + provenance score,0.1404844176426571,0.18487700408216287,0.25
+5,before,6,Lineage-aware RAG (selective rollback),0.13986283414173456,0.18561041259361477,0.0
+5,before,7,Naive RAG + delete exposed posts,0.08758300909066102,0.19333333333333333,0.125
+5,before,7,Naive RAG + delete whole family (oracle),0.08758300909066102,0.19333333333333333,0.125
+5,before,7,Text dedup + provenance score,0.05005747428766619,0.22828590201713345,0.125
+5,before,7,Lineage-aware RAG (selective rollback),0.05562946756732384,0.2318834823207523,0.25
+5,after,0,Naive RAG + delete exposed posts,0.14520274888081566,0.022388059701492536,0.0
+5,after,0,Naive RAG + delete whole family (oracle),0.14672235287704127,0.0,0.0
+5,after,0,Text dedup + provenance score,0.06866534091630883,0.016405782378413013,0.0
+5,after,0,Lineage-aware RAG (selective rollback),0.07452640931076729,0.018284450638274295,0.0
+5,after,1,Naive RAG + delete exposed posts,0.09980977021388651,0.02888086642599278,0.0
+5,after,1,Naive RAG + delete whole family (oracle),0.10071983112813161,0.0,0.0
+5,after,1,Text dedup + provenance score,0.06033811709267427,0.06259367659558601,0.125
+5,after,1,Lineage-aware RAG (selective rollback),0.056492237065663656,0.055454407510535014,0.0
+5,after,2,Naive RAG + delete exposed posts,0.07699666939476789,0.026615969581749048,0.125
+5,after,2,Naive RAG + delete whole family (oracle),0.07968057937150808,0.0,0.0
+5,after,2,Text dedup + provenance score,0.03653447547091984,0.03437712592924822,0.0
+5,after,2,Lineage-aware RAG (selective rollback),0.03554477515166535,0.0281211052982051,0.0
+5,after,3,Naive RAG + delete exposed posts,0.1210948992607273,0.028985507246376812,0.125
+5,after,3,Naive RAG + delete whole family (oracle),0.1230350766580359,0.0,0.0
+5,after,3,Text dedup + provenance score,0.10433733091137852,0.05484583034611869,0.125
+5,after,3,Lineage-aware RAG (selective rollback),0.10235358879714901,0.03198712063751582,0.0
+5,after,4,Naive RAG + delete exposed posts,0.08757680766316692,0.0,0.0
+5,after,4,Naive RAG + delete whole family (oracle),0.08757680766316692,0.0,0.0
+5,after,4,Text dedup + provenance score,0.11078258891331161,0.0,0.0
+5,after,4,Lineage-aware RAG (selective rollback),0.12702684317807214,0.0,0.0
+5,after,5,Naive RAG + delete exposed posts,0.0042243570067941605,0.028571428571428574,0.125
+5,after,5,Naive RAG + delete whole family (oracle),0.004177638004307482,0.0,0.0
+5,after,5,Text dedup + provenance score,0.0406676597839562,0.017306025803438915,0.0
+5,after,5,Lineage-aware RAG (selective rollback),0.029609230462810776,0.015297608580126148,0.0
+5,after,6,Naive RAG + delete exposed posts,0.20969947541702105,0.014035087719298246,0.0
+5,after,6,Naive RAG + delete whole family (oracle),0.2106555938791228,0.0,0.0
+5,after,6,Text dedup + provenance score,0.12194161438522216,0.014467694701097548,0.0
+5,after,6,Lineage-aware RAG (selective rollback),0.11922907882706357,0.011870333040030876,0.0
+5,after,7,Naive RAG + delete exposed posts,0.072511611953892,0.050980392156862744,0.0
+5,after,7,Naive RAG + delete whole family (oracle),0.0703522953131219,0.0,0.0
+5,after,7,Text dedup + provenance score,0.019320143127244643,0.042162224240451206,0.0
+5,after,7,Lineage-aware RAG (selective rollback),0.02384591081919929,0.03887635238299862,0.0
+6,before,0,Naive RAG + delete exposed posts,0.09147119309286363,0.13,0.0
+6,before,0,Naive RAG + delete whole family (oracle),0.09147119309286363,0.13,0.0
+6,before,0,Text dedup + provenance score,0.07026376326297018,0.20625963191493946,0.25
+6,before,0,Lineage-aware RAG (selective rollback),0.06678088242061708,0.20376467508825552,0.25
+6,before,1,Naive RAG + delete exposed posts,0.04643011711167919,0.22666666666666666,0.0
+6,before,1,Naive RAG + delete whole family (oracle),0.04643011711167919,0.22666666666666666,0.0
+6,before,1,Text dedup + provenance score,0.03606543312339944,0.23549697007597187,0.375
+6,before,1,Lineage-aware RAG (selective rollback),0.04783709730656199,0.24554680250716393,0.5
+6,before,2,Naive RAG + delete exposed posts,0.12175222606781486,0.08333333333333334,0.125
+6,before,2,Naive RAG + delete whole family (oracle),0.12175222606781486,0.08333333333333334,0.125
+6,before,2,Text dedup + provenance score,0.16914886114808214,0.3332794661763083,0.5
+6,before,2,Lineage-aware RAG (selective rollback),0.16450816149472458,0.31465659871637375,0.375
+6,before,3,Naive RAG + delete exposed posts,0.10248967718693844,0.02,0.0
+6,before,3,Naive RAG + delete whole family (oracle),0.10248967718693844,0.02,0.0
+6,before,3,Text dedup + provenance score,0.09399978610495219,0.2633879112509845,0.5
+6,before,3,Lineage-aware RAG (selective rollback),0.04983716768965499,0.2395175465497538,0.5
+6,before,4,Naive RAG + delete exposed posts,0.07192025575296782,0.21999999999999997,0.5
+6,before,4,Naive RAG + delete whole family (oracle),0.07192025575296782,0.21999999999999997,0.5
+6,before,4,Text dedup + provenance score,0.07007378570105036,0.21040640132168237,0.25
+6,before,4,Lineage-aware RAG (selective rollback),0.06708089008521348,0.2104749153612086,0.125
+6,before,5,Naive RAG + delete exposed posts,0.12575909549186745,0.11333333333333331,0.0
+6,before,5,Naive RAG + delete whole family (oracle),0.12575909549186745,0.11333333333333331,0.0
+6,before,5,Text dedup + provenance score,0.08306226322830165,0.2321106700345249,0.25
+6,before,5,Lineage-aware RAG (selective rollback),0.08747497303413299,0.238942146713221,0.25
+6,before,6,Naive RAG + delete exposed posts,0.08842903367421026,0.13,0.125
+6,before,6,Naive RAG + delete whole family (oracle),0.08842903367421026,0.13,0.125
+6,before,6,Text dedup + provenance score,0.07114320010024575,0.16662155765387227,0.0
+6,before,6,Lineage-aware RAG (selective rollback),0.07510867720855341,0.21333328264048762,0.25
+6,before,7,Naive RAG + delete exposed posts,0.04362022093906377,0.12333333333333332,0.0
+6,before,7,Naive RAG + delete whole family (oracle),0.04362022093906377,0.12333333333333332,0.0
+6,before,7,Text dedup + provenance score,0.06136469915018947,0.23923590777687023,0.125
+6,before,7,Lineage-aware RAG (selective rollback),0.04517016700832756,0.2565336175232008,0.375
+6,after,0,Naive RAG + delete exposed posts,0.09023416868073537,0.03333333333333333,0.0
+6,after,0,Naive RAG + delete whole family (oracle),0.0890678921354002,0.0,0.0
+6,after,0,Text dedup + provenance score,0.04514720701665789,0.04128545079384824,0.125
+6,after,0,Lineage-aware RAG (selective rollback),0.040397108632314105,0.0403261178476954,0.125
+6,after,1,Naive RAG + delete exposed posts,0.05709763370374986,0.05691056910569106,0.0
+6,after,1,Naive RAG + delete whole family (oracle),0.06412093916368339,0.0,0.0
+6,after,1,Text dedup + provenance score,0.04375124244101472,0.03685195306685519,0.0
+6,after,1,Lineage-aware RAG (selective rollback),0.045987417737123906,0.04436707316334032,0.0
+6,after,2,Naive RAG + delete exposed posts,0.11663134657417015,0.028268551236749116,0.125
+6,after,2,Naive RAG + delete whole family (oracle),0.11681300550479312,0.0,0.0
+6,after,2,Text dedup + provenance score,0.14144573229225396,0.03362408492088486,0.0
+6,after,2,Lineage-aware RAG (selective rollback),0.1458850946779631,0.020867514808977118,0.0
+6,after,3,Naive RAG + delete exposed posts,0.10415952778405968,0.003389830508474576,0.0
+6,after,3,Naive RAG + delete whole family (oracle),0.10461041820396821,0.0,0.0
+6,after,3,Text dedup + provenance score,0.10135840823153813,0.022231048778197652,0.0
+6,after,3,Lineage-aware RAG (selective rollback),0.06617960204137963,0.01646425543785534,0.0
+6,after,4,Naive RAG + delete exposed posts,0.026971110187176822,0.029045643153526972,0.25
+6,after,4,Naive RAG + delete whole family (oracle),0.02099960705599216,0.0,0.0
+6,after,4,Text dedup + provenance score,0.027008827764060994,0.022069462842505445,0.0
+6,after,4,Lineage-aware RAG (selective rollback),0.025061083407341478,0.02354679024630075,0.0
+6,after,5,Naive RAG + delete exposed posts,0.12256677761567875,0.014814814814814815,0.0
+6,after,5,Naive RAG + delete whole family (oracle),0.12120291657572094,0.0,0.0
+6,after,5,Text dedup + provenance score,0.07118482162505416,0.01958797105323527,0.0
+6,after,5,Lineage-aware RAG (selective rollback),0.07210551130181556,0.017606469642284666,0.0
+6,after,6,Naive RAG + delete exposed posts,0.07290351230764594,0.03690036900369004,0.125
+6,after,6,Naive RAG + delete whole family (oracle),0.0672018859406977,0.0,0.0
+6,after,6,Text dedup + provenance score,0.041613328146928835,0.019999416757145914,0.0
+6,after,6,Lineage-aware RAG (selective rollback),0.03533753824710675,0.03132453292601884,0.0
+6,after,7,Naive RAG + delete exposed posts,0.0417887786994552,0.018656716417910446,0.0
+6,after,7,Naive RAG + delete whole family (oracle),0.042754257812497684,0.0,0.0
+6,after,7,Text dedup + provenance score,0.04149660364706016,0.017381692247593488,0.0
+6,after,7,Lineage-aware RAG (selective rollback),0.03876226953122243,0.030833295720592523,0.0
+7,before,0,Naive RAG + delete exposed posts,0.1794619092817033,0.16666666666666666,0.0
+7,before,0,Naive RAG + delete whole family (oracle),0.1794619092817033,0.16666666666666666,0.0
+7,before,0,Text dedup + provenance score,0.14361528098029147,0.26444714113313594,0.125
+7,before,0,Lineage-aware RAG (selective rollback),0.1366144941694735,0.2538766050713256,0.125
+7,before,1,Naive RAG + delete exposed posts,0.0847575392271451,0.05,0.0
+7,before,1,Naive RAG + delete whole family (oracle),0.0847575392271451,0.05,0.0
+7,before,1,Text dedup + provenance score,0.04356176244909665,0.17374759918619925,0.375
+7,before,1,Lineage-aware RAG (selective rollback),0.05537527357128805,0.15679942757858878,0.0
+7,before,2,Naive RAG + delete exposed posts,0.09875140787001427,0.08,0.0
+7,before,2,Naive RAG + delete whole family (oracle),0.09875140787001427,0.08,0.0
+7,before,2,Text dedup + provenance score,0.09735284190175095,0.2503696574750991,0.125
+7,before,2,Lineage-aware RAG (selective rollback),0.08885604421739071,0.2984301686714908,0.125
+7,before,3,Naive RAG + delete exposed posts,0.029136909171550873,0.2733333333333333,0.625
+7,before,3,Naive RAG + delete whole family (oracle),0.029136909171550873,0.2733333333333333,0.625
+7,before,3,Text dedup + provenance score,0.024501370086399313,0.2522034772478583,0.125
+7,before,3,Lineage-aware RAG (selective rollback),0.02498262520851416,0.23992984022627262,0.0
+7,before,4,Naive RAG + delete exposed posts,0.15320897814705278,0.07333333333333332,0.0
+7,before,4,Naive RAG + delete whole family (oracle),0.15320897814705278,0.07333333333333332,0.0
+7,before,4,Text dedup + provenance score,0.18161483706025808,0.2537512588111436,0.375
+7,before,4,Lineage-aware RAG (selective rollback),0.18741446479712545,0.28408832073455986,0.375
+7,before,5,Naive RAG + delete exposed posts,0.0916569422593662,0.15,0.0
+7,before,5,Naive RAG + delete whole family (oracle),0.0916569422593662,0.15,0.0
+7,before,5,Text dedup + provenance score,0.08623131781809887,0.25109443678475096,0.25
+7,before,5,Lineage-aware RAG (selective rollback),0.08998416760388184,0.23208344226278305,0.375
+7,before,6,Naive RAG + delete exposed posts,0.14124855948614262,0.17333333333333334,0.375
+7,before,6,Naive RAG + delete whole family (oracle),0.14124855948614262,0.17333333333333334,0.375
+7,before,6,Text dedup + provenance score,0.07372766015662657,0.2091371170554716,0.125
+7,before,6,Lineage-aware RAG (selective rollback),0.08737479030169831,0.20049738501691322,0.25
+7,before,7,Naive RAG + delete exposed posts,0.15935348769033403,0.016666666666666666,0.0
+7,before,7,Naive RAG + delete whole family (oracle),0.15935348769033403,0.016666666666666666,0.0
+7,before,7,Text dedup + provenance score,0.16707410212582396,0.16772914929800345,0.125
+7,before,7,Lineage-aware RAG (selective rollback),0.13998254656217796,0.170677398600826,0.25
+7,after,0,Naive RAG + delete exposed posts,0.1641163335655085,0.042145593869731796,0.0
+7,after,0,Naive RAG + delete whole family (oracle),0.15950681459235522,0.0,0.0
+7,after,0,Text dedup + provenance score,0.09168644795617006,0.05700655539222957,0.0
+7,after,0,Lineage-aware RAG (selective rollback),0.08373481541300601,0.04916283273996875,0.0
+7,after,1,Naive RAG + delete exposed posts,0.08372465975636097,0.01384083044982699,0.0
+7,after,1,Naive RAG + delete whole family (oracle),0.08230216663392657,0.0,0.0
+7,after,1,Text dedup + provenance score,0.03715285554780598,0.027802126459618767,0.0
+7,after,1,Lineage-aware RAG (selective rollback),0.04504207987573142,0.011489792145704357,0.0
+7,after,2,Naive RAG + delete exposed posts,0.1004389637148464,0.010752688172043012,0.0
+7,after,2,Naive RAG + delete whole family (oracle),0.10016914909496685,0.0,0.0
+7,after,2,Text dedup + provenance score,0.09429671122696867,0.012390086333753467,0.0
+7,after,2,Lineage-aware RAG (selective rollback),0.10287769609422831,0.01620509571261682,0.0
+7,after,3,Naive RAG + delete exposed posts,0.004753200920182582,0.08403361344537816,0.375
+7,after,3,Naive RAG + delete whole family (oracle),0.014955473795856433,0.0,0.0
+7,after,3,Text dedup + provenance score,0.028846753877748738,0.050714784337345636,0.125
+7,after,3,Lineage-aware RAG (selective rollback),0.02005735957268545,0.04031567211572124,0.0
+7,after,4,Naive RAG + delete exposed posts,0.14724071260005103,0.02112676056338028,0.0
+7,after,4,Naive RAG + delete whole family (oracle),0.1459991295210441,0.0,0.0
+7,after,4,Text dedup + provenance score,0.16023327794674147,0.04534772772197437,0.0
+7,after,4,Lineage-aware RAG (selective rollback),0.16343126291049692,0.052877200171943174,0.125
+7,after,5,Naive RAG + delete exposed posts,0.08806748007022765,0.03773584905660378,0.0
+7,after,5,Naive RAG + delete whole family (oracle),0.09118512886467812,0.0,0.0
+7,after,5,Text dedup + provenance score,0.0512520127405246,0.03394699312655962,0.125
+7,after,5,Lineage-aware RAG (selective rollback),0.05940025922791711,0.024610680637556184,0.0
+7,after,6,Naive RAG + delete exposed posts,0.139099388115904,0.04247104247104247,0.25
+7,after,6,Naive RAG + delete whole family (oracle),0.1378466977510738,0.0,0.0
+7,after,6,Text dedup + provenance score,0.05902191239168597,0.02842631360438378,0.0
+7,after,6,Lineage-aware RAG (selective rollback),0.0698804654406831,0.017730048299794826,0.0
+7,after,7,Naive RAG + delete exposed posts,0.15598984383461464,0.0,0.0
+7,after,7,Naive RAG + delete whole family (oracle),0.15598984383461464,0.0,0.0
+7,after,7,Text dedup + provenance score,0.1325553505586635,0.007690676404859575,0.0
+7,after,7,Lineage-aware RAG (selective rollback),0.0989825419866883,0.007843038045709379,0.0

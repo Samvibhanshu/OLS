@@ -1,0 +1,107 @@
+[
+  {
+    "scenario": "A: 200 invalid roots (patent scenario)",
+    "events": 200,
+    "corpus_records": 50000,
+    "records_touched": 1165,
+    "pct_corpus_touched": 2.33,
+    "selective_model_rows": [
+      0,
+      0
+    ],
+    "full_model_rows": [
+      50000,
+      50000
+    ],
+    "t_selective_s": 0.011966166000092926,
+    "t_dense_resum_s": 0.29510154699983104,
+    "t_full_reprocessing_s": 0.41708643700007997,
+    "speedup_vs_full_reprocessing": 34.85547810358314,
+    "speedup_vs_dense_resum": 24.661328197982492,
+    "max_abs_diff_distribution": 2.609024107869118e-15,
+    "max_abs_diff_weights": 0.0,
+    "max_abs_diff_bucket_aggregate": 1.8474111129762605e-13,
+    "organic_before": [
+      0.2992075595837832,
+      0.30233216405657243,
+      0.3984602769331298
+    ],
+    "organic_after": [
+      0.29836589440372596,
+      0.3025850189827715,
+      0.399049087240801
+    ],
+    "shift_tvd": 0.0008416652069637709,
+    "audit_versions": 200
+  },
+  {
+    "scenario": "B: mixed revision stream (400 events)",
+    "events": 400,
+    "corpus_records": 50000,
+    "records_touched": 1529,
+    "pct_corpus_touched": 3.058,
+    "selective_model_rows": [
+      0,
+      0
+    ],
+    "full_model_rows": [
+      50000,
+      50000
+    ],
+    "t_selective_s": 0.011100548999820603,
+    "t_dense_resum_s": 0.454678045999799,
+    "t_full_reprocessing_s": 0.641612996000049,
+    "speedup_vs_full_reprocessing": 57.80011385116341,
+    "speedup_vs_dense_resum": 40.95996026927561,
+    "max_abs_diff_distribution": 1.6653345369377348e-15,
+    "max_abs_diff_weights": 0.0,
+    "max_abs_diff_bucket_aggregate": 1.7053025658242404e-13,
+    "organic_before": [
+      0.2992075595837832,
+      0.30233216405657243,
+      0.3984602769331298
+    ],
+    "organic_after": [
+      0.29942007816604094,
+      0.3026515061439396,
+      0.39792841625004066
+    ],
+    "shift_tvd": 0.0005318606763570211,
+    "audit_versions": 400
+  },
+  {
+    "scenario": "C: takedown of the 40 largest lineages",
+    "events": 40,
+    "corpus_records": 50000,
+    "records_touched": 2390,
+    "pct_corpus_touched": 4.78,
+    "selective_model_rows": [
+      0,
+      0
+    ],
+    "full_model_rows": [
+      50000,
+      50000
+    ],
+    "t_selective_s": 0.004345322000062879,
+    "t_dense_resum_s": 0.07102477599983104,
+    "t_full_reprocessing_s": 0.23423029500008852,
+    "speedup_vs_full_reprocessing": 53.90401332667616,
+    "speedup_vs_dense_resum": 16.345112283693425,
+    "max_abs_diff_distribution": 1.5543122344752192e-15,
+    "max_abs_diff_weights": 0.0,
+    "max_abs_diff_bucket_aggregate": 2.1316282072803006e-13,
+    "organic_before": [
+      0.2992075595837832,
+      0.30233216405657243,
+      0.3984602769331298
+    ],
+    "organic_after": [
+      0.2989010276573499,
+      0.30227407171341064,
+      0.3988249012061269
+    ],
+    "shift_tvd": 0.00036462427129610453,
+    "audit_versions": 40
+  }
+]

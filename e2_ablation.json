@@ -1,0 +1,44 @@
+{
+  "Full: lineage + independence + synthetic": {
+    "mean": 0.010131067705047408,
+    "std": 0.004810512681269506,
+    "delta_vs_full": 0.0,
+    "wilcoxon_p": NaN
+  },
+  "Lineage + synthetic": {
+    "mean": 0.008974650565489052,
+    "std": 0.004249382863058057,
+    "delta_vs_full": -0.0011564171395583565,
+    "wilcoxon_p": 0.06372261047363281
+  },
+  "Lineage + synthetic + coordination (gamma=0.3)": {
+    "mean": 0.010199543138128457,
+    "std": 0.004844755057204754,
+    "delta_vs_full": 6.847543308104859e-05,
+    "wilcoxon_p": 0.05316925048828125
+  },
+  "Lineage only": {
+    "mean": 0.008589682789423691,
+    "std": 0.004365518258231776,
+    "delta_vs_full": -0.0015413849156237184,
+    "wilcoxon_p": 0.09730720520019531
+  },
+  "No lineage (message-level only)": {
+    "mean": 0.021653376787527757,
+    "std": 0.009713925309158565,
+    "delta_vs_full": 0.01152230908248035,
+    "wilcoxon_p": 0.0019855499267578125
+  },
+  "Oracle lineage (ground-truth parents)": {
+    "mean": 0.010231069657143902,
+    "std": 0.004861076453892063,
+    "delta_vs_full": 0.00010000195209649426,
+    "wilcoxon_p": 0.38837623596191406
+  },
+  "Soft (harmonic) provenance weighting": {
+    "mean": 0.008812065536744986,
+    "std": 0.005065888054461789,
+    "delta_vs_full": -0.0013190021683024216,
+    "wilcoxon_p": 0.2773551940917969
+  }
+}

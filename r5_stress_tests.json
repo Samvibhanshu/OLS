@@ -1,0 +1,38 @@
+{
+  "disguise=0.0:dedup_0.8": {
+    "mean_diff": 0.007621646041339701,
+    "p": 0.1953125
+  },
+  "disguise=0.0:dedup_prov": {
+    "mean_diff": -0.0021667274461669578,
+    "p": 0.546875
+  },
+  "disguise=0.0:naive_all": {
+    "mean_diff": 0.04094811093928768,
+    "p": 0.0078125
+  },
+  "disguise=0.5:dedup_0.8": {
+    "mean_diff": 0.012579213357163417,
+    "p": 0.015625
+  },
+  "disguise=0.5:dedup_prov": {
+    "mean_diff": -0.00034206466765592577,
+    "p": 0.9453125
+  },
+  "disguise=0.5:naive_all": {
+    "mean_diff": 0.03833619386859852,
+    "p": 0.0078125
+  },
+  "disguise=1.0:dedup_0.8": {
+    "mean_diff": 0.018261979508875953,
+    "p": 0.0078125
+  },
+  "disguise=1.0:dedup_prov": {
+    "mean_diff": 0.0032697069730579153,
+    "p": 0.0234375
+  },
+  "disguise=1.0:naive_all": {
+    "mean_diff": 0.04726021178980028,
+    "p": 0.0078125
+  }
+}

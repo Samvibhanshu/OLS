@@ -1,0 +1,394 @@
+...........................                                              [100%]
+27 passed in 2.46s
+rho=0.0 done  (5s)
+rho=0.1 done  (10s)
+rho=0.2 done  (15s)
+rho=0.3 done  (20s)
+rho=0.4 done  (25s)
+rho=0.5 done  (30s)
+{
+ "Full: lineage + independence + synthetic": {
+  "mean": 0.010131067705047408,
+  "std": 0.004810512681269506,
+  "delta_vs_full": 0.0,
+  "wilcoxon_p": NaN
+ },
+ "Lineage + synthetic": {
+  "mean": 0.008974650565489052,
+  "std": 0.004249382863058057,
+  "delta_vs_full": -0.0011564171395583565,
+  "wilcoxon_p": 0.06372261047363281
+ },
+ "Lineage + synthetic + coordination (gamma=0.3)": {
+  "mean": 0.010199543138128457,
+  "std": 0.004844755057204754,
+  "delta_vs_full": 6.847543308104859e-05,
+  "wilcoxon_p": 0.05316925048828125
+ },
+ "Lineage only": {
+  "mean": 0.008589682789423691,
+  "std": 0.004365518258231776,
+  "delta_vs_full": -0.0015413849156237184,
+  "wilcoxon_p": 0.09730720520019531
+ },
+ "No lineage (message-level only)": {
+  "mean": 0.021653376787527757,
+  "std": 0.009713925309158565,
+  "delta_vs_full": 0.01152230908248035,
+  "wilcoxon_p": 0.0019855499267578125
+ },
+ "Oracle lineage (ground-truth parents)": {
+  "mean": 0.010231069657143902,
+  "std": 0.004861076453892063,
+  "delta_vs_full": 0.00010000195209649426,
+  "wilcoxon_p": 0.38837623596191406
+ },
+ "Soft (harmonic) provenance weighting": {
+  "mean": 0.008812065536744986,
+  "std": 0.005065888054461789,
+  "delta_vs_full": -0.0013190021683024216,
+  "wilcoxon_p": 0.2773551940917969
+ }
+}
+| Method | 0% | 10% | 20% | 30% | 40% | 50% |
+|---|---|---|---|---|---|---|
+| Raw aggregation | 0.0077 ± 0.0037 | 0.0089 ± 0.0047 | 0.0170 ± 0.0081 | 0.0306 ± 0.0085 | 0.0378 ± 0.0068 | 0.0468 ± 0.0089 |
+| Deduplication (tau=0.90) | 0.0077 ± 0.0037 | 0.0070 ± 0.0043 | 0.0103 ± 0.0056 | 0.0186 ± 0.0068 | 0.0249 ± 0.0060 | 0.0339 ± 0.0080 |
+| Deduplication (tuned tau) | 0.0073 ± 0.0037 | 0.0047 ± 0.0038 | 0.0043 ± 0.0045 | 0.0054 ± 0.0043 | 0.0062 ± 0.0053 | 0.0078 ± 0.0052 |
+| Synthetic filtering | 0.0077 ± 0.0036 | 0.0068 ± 0.0039 | 0.0105 ± 0.0053 | 0.0196 ± 0.0071 | 0.0255 ± 0.0054 | 0.0314 ± 0.0076 |
+| Message-level weighting | 0.0077 ± 0.0036 | 0.0068 ± 0.0041 | 0.0124 ± 0.0060 | 0.0227 ± 0.0076 | 0.0290 ± 0.0060 | 0.0362 ± 0.0082 |
+| Tree-normalised (1/size) | 0.0079 ± 0.0039 | 0.0076 ± 0.0040 | 0.0077 ± 0.0050 | 0.0076 ± 0.0055 | 0.0076 ± 0.0059 | 0.0088 ± 0.0054 |
+| Proposed (inferred lineage) | 0.0077 ± 0.0037 | 0.0071 ± 0.0036 | 0.0076 ± 0.0052 | 0.0075 ± 0.0055 | 0.0068 ± 0.0059 | 0.0086 ± 0.0050 |
+| Proposed (oracle lineage) | 0.0078 ± 0.0037 | 0.0072 ± 0.0036 | 0.0079 ± 0.0052 | 0.0076 ± 0.0058 | 0.0070 ± 0.0063 | 0.0087 ± 0.0052 |
+
+     seed  root_acc  ...    SCI  true_amp_share
+rho                  ...                       
+0.0   5.5     0.947  ...  0.001             0.0
+0.1   5.5     0.955  ...  0.010             0.1
+0.2   5.5     0.963  ...  0.019             0.2
+0.3   5.5     0.970  ...  0.032             0.3
+0.4   5.5     0.975  ...  0.038             0.4
+0.5   5.5     0.980  ...  0.048             0.5
+
+[6 rows x 9 columns]
+corpus: 50000 records, 10000 roots, 40000 derivatives  (2s)
+initial pipeline incl. O(N^2) lineage inference: 9s ; inferred roots=9163
+[A: 200 invalid roots (patent scenario)] events=200 touched=1165 (2.33%) | model rows sel=[0, 0] full=[50000, 50000] | t sel=12.0ms dense=295ms full=417ms | max|diff|=2.61e-15
+[B: mixed revision stream (400 events)] events=400 touched=1529 (3.06%) | model rows sel=[0, 0] full=[50000, 50000] | t sel=11.1ms dense=455ms full=642ms | max|diff|=1.67e-15
+[C: takedown of the 40 largest lineages] events=40 touched=2390 (4.78%) | model rows sel=[0, 0] full=[50000, 50000] | t sel=4.3ms dense=71ms full=234ms | max|diff|=1.55e-15
+{'N': 10000, 'touched': 1167, 't_selective': 0.006161873999872114, 't_dense': 0.04531410499998856, 't_full': 0.06355589300005704}
+{'N': 25000, 'touched': 1109, 't_selective': 0.004361571000117692, 't_dense': 0.08920669799999814, 't_full': 0.13687146799998118}
+{'N': 50000, 'touched': 1045, 't_selective': 0.0047540969999317895, 't_dense': 0.30665582699998595, 't_full': 0.4053985489999832}
+{'N': 100000, 'touched': 1123, 't_selective': 0.007231391000004805, 't_dense': 0.6969944009999836, 't_full': 0.8961307990000478}
+{'N': 200000, 'touched': 869, 't_selective': 0.006663116000027003, 't_dense': 1.6947117629999866, 't_full': 2.367849868000121}
+   lineage_size  t_selective
+0             1     0.000061
+1             3     0.000072
+2            10     0.000093
+3            28     0.000132
+4            35     0.000096
+7          1914     0.001580
+9          2001     0.001488
+sleeper roots detected: 2470  (share of all roots 19.6%)
+{
+ "sleeper_roots": 2470,
+ "records_touched": 3364,
+ "pct_touched": 16.82,
+ "model_rows": [
+  0,
+  0
+ ],
+ "max_abs_diff_vs_full": 8.881784197001252e-16,
+ "truth": [
+  0.2970707525912573,
+  0.29761153672825597,
+  0.4053177106804867
+ ],
+ "observed": [
+  0.3608340131658566,
+  0.2787030141936877,
+  0.3604629726261774
+ ],
+ "organic_before": [
+  0.3353665649377256,
+  0.2874208597663038,
+  0.37721257545637593
+ ],
+ "organic_after": [
+  0.301546987689471,
+  0.2985823469772539,
+  0.3998706657361865
+ ],
+ "err_raw": 0.06376326058173845,
+ "err_before": 0.038295812266265605,
+ "err_after": 0.005447045145755919,
+ "sci_before": 0.025467448315472846,
+ "sci_after": 0.059287025684980454,
+ "versions": 2470
+}
+tau1 0.6 [0.008  0.0073 0.0067 0.0063]
+tau1 0.65 [0.0077 0.0071 0.007  0.0067]
+tau1 0.7 [0.0072 0.0068 0.0063 0.0062]
+tau1 0.75 [0.0071 0.0066 0.0062 0.006 ]
+tau1 0.8 [   nan 0.0061 0.0059 0.0057]
+{'best_alpha': 0.9, 'best_beta': 0, 'best_gamma': 0, 'validation_err': np.float64(0.008389909729090966), 'test_err_tuned': np.float64(0.009141619321548286), 'test_err_default': np.float64(0.009643767118928174), 'test_err_raw': 0.03043397776663764}
+rho=0.0 done (12s)
+rho=0.2 done (22s)
+rho=0.4 done (33s)
+rho=0.5 done (44s)
+| Method | 0% | 20% | 40% | 50% |
+|---|---|---|---|---|
+| Naive RAG (top-m) | 0.1356 ± 0.0308 | 0.1639 ± 0.0361 | 0.1996 ± 0.0426 | 0.1914 ± 0.0272 |
+| Naive RAG (all K) | 0.0306 ± 0.0044 | 0.0636 ± 0.0201 | 0.0979 ± 0.0209 | 0.1204 ± 0.0185 |
+| MMR diversification (m) | 0.1179 ± 0.0213 | 0.1290 ± 0.0289 | 0.1277 ± 0.0197 | 0.1523 ± 0.0443 |
+| Text near-duplicate collapse (tau=0.8) | 0.0308 ± 0.0045 | 0.0378 ± 0.0081 | 0.0648 ± 0.0151 | 0.1035 ± 0.0164 |
+| Text dedup + provenance score | 0.0310 ± 0.0050 | 0.0374 ± 0.0046 | 0.0579 ± 0.0104 | 0.0931 ± 0.0202 |
+| Text dedup, tau tuned on ground truth* | 0.0304 ± 0.0040 (tau=0.9) | 0.0378 ± 0.0081 (tau=0.8) | 0.0628 ± 0.0141 (tau=0.6) | 0.0941 ± 0.0268 (tau=0.6) |
+| **Lineage-aware RAG (ours)** | 0.0306 ± 0.0051 | 0.0384 ± 0.0051 | 0.0611 ± 0.0093 | 0.0970 ± 0.0220 |
+| **Lineage-aware RAG (oracle lineage)** | 0.0307 ± 0.0050 | 0.0388 ± 0.0046 | 0.0660 ± 0.0105 | 0.1089 ± 0.0232 |
+{
+ "0%": {
+  "best_baseline": "Naive RAG (all K)",
+  "mean_diff": -6.086902528448009e-06,
+  "wilcoxon_p": 0.640625,
+  "vs_tuned_dedup_mean_diff": -0.00026116943540770935,
+  "vs_tuned_dedup_p": 0.84375,
+  "vs_naive_topm": {
+   "mean_diff": 0.1049726140424998,
+   "p": 0.0078125
+  },
+  "vs_naive_all": {
+   "mean_diff": -6.086902528448009e-06,
+   "p": 0.640625
+  },
+  "vs_mmr": {
+   "mean_diff": 0.08730231256152184,
+   "p": 0.0078125
+  },
+  "vs_dedup_0.8": {
+   "mean_diff": 0.00015455822511115536,
+   "p": 0.84375
+  },
+  "vs_dedup_prov": {
+   "mean_diff": 0.0003581142532834759,
+   "p": 0.546875
+  }
+ },
+ "20%": {
+  "best_baseline": "Text dedup + provenance score",
+  "mean_diff": -0.0010241829411143108,
+  "wilcoxon_p": 0.1484375,
+  "vs_tuned_dedup_mean_diff": -0.0006345773877517043,
+  "vs_tuned_dedup_p": 0.7421875,
+  "vs_naive_topm": {
+   "mean_diff": 0.1255376888537416,
+   "p": 0.0078125
+  },
+  "vs_naive_all": {
+   "mean_diff": 0.02522747823698134,
+   "p": 0.0078125
+  },
+  "vs_mmr": {
+   "mean_diff": 0.09062394242285596,
+   "p": 0.0078125
+  },
+  "vs_dedup_0.8": {
+   "mean_diff": -0.0006345773877517043,
+   "p": 0.7421875
+  },
+  "vs_dedup_prov": {
+   "mean_diff": -0.0010241829411143108,
+   "p": 0.1484375
+  }
+ },
+ "40%": {
+  "best_baseline": "Text dedup + provenance score",
+  "mean_diff": -0.0032133540959576818,
+  "wilcoxon_p": 0.546875,
+  "vs_tuned_dedup_mean_diff": 0.0017058207539424504,
+  "vs_tuned_dedup_p": 0.7421875,
+  "vs_naive_topm": {
+   "mean_diff": 0.1384469268826941,
+   "p": 0.0078125
+  },
+  "vs_naive_all": {
+   "mean_diff": 0.036748950358261714,
+   "p": 0.0078125
+  },
+  "vs_mmr": {
+   "mean_diff": 0.06658425626108516,
+   "p": 0.0078125
+  },
+  "vs_dedup_0.8": {
+   "mean_diff": 0.003676908036290649,
+   "p": 0.546875
+  },
+  "vs_dedup_prov": {
+   "mean_diff": -0.0032133540959576818,
+   "p": 0.546875
+  }
+ },
+ "50%": {
+  "best_baseline": "Text dedup + provenance score",
+  "mean_diff": -0.003878889079935636,
+  "wilcoxon_p": 0.1953125,
+  "vs_tuned_dedup_mean_diff": -0.0028642940954461847,
+  "vs_tuned_dedup_p": 0.7421875,
+  "vs_naive_topm": {
+   "mean_diff": 0.09442158941973461,
+   "p": 0.0078125
+  },
+  "vs_naive_all": {
+   "mean_diff": 0.02342809055591992,
+   "p": 0.0546875
+  },
+  "vs_mmr": {
+   "mean_diff": 0.05534235829594824,
+   "p": 0.0078125
+  },
+  "vs_dedup_0.8": {
+   "mean_diff": 0.006483112394998498,
+   "p": 0.25
+  },
+  "vs_dedup_prov": {
+   "mean_diff": -0.003878889079935636,
+   "p": 0.1953125
+  }
+ }
+}
+                                        cite_organic_root  cite_distinct_lineage  cite_campaign  topic_prec    eff_n  n_lineages
+method                                                                                                                          
+Naive RAG (top-m)                                   0.043                  0.484          0.822       0.999    8.000       0.000
+Naive RAG (all K)                                   0.043                  0.484          0.822       0.999  300.000       0.000
+MMR diversification (m)                             0.252                  0.867          0.508       0.999    8.000       0.000
+Text near-duplicate collapse (tau=0.8)              0.117                  0.734          0.744       0.999  110.781     110.781
+Text dedup + provenance score                       0.893                  0.975          0.102       0.999   72.382     110.781
+Lineage-aware RAG (ours)                            0.887                  0.984          0.096       0.999   66.830      92.891
+Lineage-aware RAG (oracle lineage)                  0.896                  1.000          0.093       0.999   62.872      91.688
+grounding audit: share of answers passing verify_answer = 1.0
+                                     mean     std
+Full weights W (ours)              0.0611  0.0093
+Lineage structure only             0.0717  0.0080
+Lineage + synthetic term           0.0666  0.0071
+Tree-normalised (1/size)           0.0516  0.0089
+Message-level (no lineage)         0.0925  0.0201
+Roots only (drop all derivatives)  0.0666  0.0099
+done 45.27873134613037
+seed 0 done (2s)
+seed 1 done (3s)
+seed 2 done (5s)
+seed 3 done (7s)
+seed 4 done (8s)
+seed 5 done (10s)
+seed 6 done (12s)
+seed 7 done (13s)
+| System | error before | error after | sleeper-family share of evidence before | after | sleeper posts among cited, after |
+|---|---|---|---|---|---|
+| Naive RAG + delete exposed posts | 0.1055 ± 0.0109 | 0.0960 ± 0.0109 | 12.3% | 2.7% | 6.4% |
+| Naive RAG + delete whole family (oracle) | 0.1055 ± 0.0109 | 0.0945 ± 0.0112 | 12.3% | 0.0% | 0.0% |
+| Text dedup + provenance score | 0.0847 ± 0.0178 | 0.0662 ± 0.0189 | 21.6% | 3.2% | 1.6% |
+| Lineage-aware RAG (selective rollback) | 0.0853 ± 0.0156 | 0.0670 ± 0.0159 | 22.2% | 3.0% | 0.6% |
+{
+ "err: lineage vs Naive RAG + delete exposed posts": {
+  "mean_diff": 0.029027588658217404,
+  "p": 0.0078125
+ },
+ "err: lineage vs Naive RAG + delete whole family (oracle)": {
+  "mean_diff": 0.027539805043939054,
+  "p": 0.0078125
+ },
+ "err: lineage vs Text dedup + provenance score": {
+  "mean_diff": -0.000781846378751937,
+  "p": 0.84375
+ },
+ "family_share: lineage vs Naive RAG + delete exposed posts": {
+  "mean_diff": -0.0031478090869159637,
+  "p": 0.3828125
+ },
+ "family_share: lineage vs Naive RAG + delete whole family (oracle)": {
+  "mean_diff": -0.030180840923143874,
+  "p": 0.0078125
+ },
+ "family_share: lineage vs Text dedup + provenance score": {
+  "mean_diff": 0.0016990482242805137,
+  "p": 0.4609375
+ }
+}
+seed                              3.5000
+exposed_roots                   798.1250
+events                          798.1250
+records_touched                1038.1250
+pct_touched                      17.3021
+selective_ms                     17.3815
+rebuild_s                         0.2258
+index_rebuild_s                   0.1218
+model_rows_selective              0.0000
+model_rows_rebuild            12000.0000
+max_dW                            0.0000
+max_dS                            0.0000
+answers                          24.0000
+invalidated_single_lineage        2.2500
+done 13.81273102760315
+disguise=0.0 done (6s)
+disguise=0.5 done (12s)
+disguise=1.0 done (19s)
+| Method | 0% disguised | 50% disguised | 100% disguised |
+|---|---|---|---|
+| Naive RAG (all K) | 0.1110 ± 0.0141 | 0.1029 ± 0.0126 | 0.1024 ± 0.0132 |
+| Text near-duplicate collapse (tau=0.8) | 0.0776 ± 0.0157 | 0.0772 ± 0.0130 | 0.0734 ± 0.0088 |
+| Text dedup + provenance score | 0.0679 ± 0.0112 | 0.0643 ± 0.0123 | 0.0584 ± 0.0061 |
+| Lineage-aware RAG (ours) | 0.0700 ± 0.0130 | 0.0646 ± 0.0132 | 0.0551 ± 0.0063 |
+{
+ "disguise=0.0:dedup_0.8": {
+  "mean_diff": 0.007621646041339701,
+  "p": 0.1953125
+ },
+ "disguise=0.0:dedup_prov": {
+  "mean_diff": -0.0021667274461669578,
+  "p": 0.546875
+ },
+ "disguise=0.0:naive_all": {
+  "mean_diff": 0.04094811093928768,
+  "p": 0.0078125
+ },
+ "disguise=0.5:dedup_0.8": {
+  "mean_diff": 0.012579213357163417,
+  "p": 0.015625
+ },
+ "disguise=0.5:dedup_prov": {
+  "mean_diff": -0.00034206466765592577,
+  "p": 0.9453125
+ },
+ "disguise=0.5:naive_all": {
+  "mean_diff": 0.03833619386859852,
+  "p": 0.0078125
+ },
+ "disguise=1.0:dedup_0.8": {
+  "mean_diff": 0.018261979508875953,
+  "p": 0.0078125
+ },
+ "disguise=1.0:dedup_prov": {
+  "mean_diff": 0.0032697069730579153,
+  "p": 0.0234375
+ },
+ "disguise=1.0:naive_all": {
+  "mean_diff": 0.04726021178980028,
+  "p": 0.0078125
+ }
+}
+done 19.302348613739014
+{'posts': 6000, 'lineage_build_s': 0.18825560100003713, 'index_and_store_s': 0.3379260130000148, 'naive_p50_ms': np.float64(1.497832000040944), 'lineage_p50_ms': np.float64(1.7950950000340526), 'lineage_p95_ms': np.float64(2.4711230998491374), 'retract_events': 348, 'retract_ms': 11.206152995782759, 'rebuild_s': 0.18660668900020028}
+{'posts': 12000, 'lineage_build_s': 0.5279803650000758, 'index_and_store_s': 0.614819665000141, 'naive_p50_ms': np.float64(2.0599110000603105), 'lineage_p50_ms': np.float64(2.3939300001529773), 'lineage_p95_ms': np.float64(3.199791249903683), 'retract_events': 671, 'retract_ms': 13.119035009822255, 'rebuild_s': 0.35928224000008413}
+{'posts': 24000, 'lineage_build_s': 2.2177781890000006, 'index_and_store_s': 1.417852468000092, 'naive_p50_ms': np.float64(3.1029495000893803), 'lineage_p50_ms': np.float64(3.4270339999693533), 'lineage_p95_ms': np.float64(4.396907500017733), 'retract_events': 1275, 'retract_ms': 25.19118699365208, 'rebuild_s': 1.0427822020001258}
+weights before: [0.9   0.09  0.018 0.009 0.8   0.24  0.096]  organic: [0.417 0.153 0.431]
+A invalidated -> touched 4 of 7 records (A,B,C,D); F,G,H untouched
+weights after : [0.    0.009 0.005 0.006 0.8   0.24  0.096]  organic: [0.69  0.198 0.112]
+
+stream: truth=[0.318 0.291 0.391] observed=[0.342 0.27  0.388] organic=[0.301 0.299 0.4  ]  SCI=0.041
+independent mass 1249 vs amplification mass 1751 of 3000 records
+saved /home/claude/opinion_lineage_project/results/figures/demo_lineage.png
+
+real	3m48.167s
+user	4m57.175s
+sys	0m14.565s
+exit 0

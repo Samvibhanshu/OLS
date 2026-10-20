@@ -1,0 +1,96 @@
+{
+  "Naive RAG + delete exposed posts": {
+    "err_before": [
+      0.10549663958264077,
+      0.010939728494988208
+    ],
+    "err_after": [
+      0.09600899216568859,
+      0.01091213858957936
+    ],
+    "fam_before": 0.12338541666666666,
+    "fam_after": 0.02703303183622791,
+    "cite_family_after": 0.064453125
+  },
+  "Naive RAG + delete whole family (oracle)": {
+    "err_before": [
+      0.10549663958264077,
+      0.010939728494988208
+    ],
+    "err_after": [
+      0.09452120855141025,
+      0.011236155352029473
+    ],
+    "fam_before": 0.12338541666666666,
+    "fam_after": 0.0,
+    "cite_family_after": 0.0
+  },
+  "Text dedup + provenance score": {
+    "err_before": [
+      0.08465754323451276,
+      0.01776026730237725
+    ],
+    "err_after": [
+      0.06619955712871925,
+      0.018918103967602243
+    ],
+    "fam_before": 0.21609930970839963,
+    "fam_after": 0.03187988914742439,
+    "cite_family_after": 0.015625
+  },
+  "Lineage-aware RAG (selective rollback)": {
+    "err_before": [
+      0.08529726969819729,
+      0.015621833985353651
+    ],
+    "err_after": [
+      0.0669814035074712,
+      0.01586752407255427
+    ],
+    "fam_before": 0.22186026550794308,
+    "fam_after": 0.030180840923143874,
+    "cite_family_after": 0.005859375
+  },
+  "tests_after": {
+    "err: lineage vs Naive RAG + delete exposed posts": {
+      "mean_diff": 0.029027588658217404,
+      "p": 0.0078125
+    },
+    "err: lineage vs Naive RAG + delete whole family (oracle)": {
+      "mean_diff": 0.027539805043939054,
+      "p": 0.0078125
+    },
+    "err: lineage vs Text dedup + provenance score": {
+      "mean_diff": -0.000781846378751937,
+      "p": 0.84375
+    },
+    "family_share: lineage vs Naive RAG + delete exposed posts": {
+      "mean_diff": -0.0031478090869159637,
+      "p": 0.3828125
+    },
+    "family_share: lineage vs Naive RAG + delete whole family (oracle)": {
+      "mean_diff": -0.030180840923143874,
+      "p": 0.0078125
+    },
+    "family_share: lineage vs Text dedup + provenance score": {
+      "mean_diff": 0.0016990482242805137,
+      "p": 0.4609375
+    }
+  },
+  "cost": {
+    "seed": 3.5,
+    "exposed_roots": 798.125,
+    "events": 798.125,
+    "records_touched": 1038.125,
+    "pct_touched": 17.302083333333336,
+    "selective_ms": 17.381534250972663,
+    "rebuild_s": 0.22584490149995418,
+    "index_rebuild_s": 0.12176044587502588,
+    "model_rows_selective": 0.0,
+    "model_rows_rebuild": 12000.0,
+    "max_dW": 0.0,
+    "max_dS": 0.0,
+    "answers": 24.0,
+    "invalidated_single_lineage": 2.25
+  }
+}

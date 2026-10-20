@@ -1,0 +1,7 @@
+{
+  "Lineage + synthetic term": 0.078125,
+  "Lineage structure only": 0.0234375,
+  "Message-level (no lineage)": 0.0078125,
+  "Roots only (drop all derivatives)": 0.25,
+  "Tree-normalised (1/size)": 0.0390625
+}

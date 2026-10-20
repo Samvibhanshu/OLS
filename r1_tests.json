@@ -1,0 +1,110 @@
+{
+  "0%": {
+    "best_baseline": "Naive RAG (all K)",
+    "mean_diff": -6.086902528448009e-06,
+    "wilcoxon_p": 0.640625,
+    "vs_tuned_dedup_mean_diff": -0.00026116943540770935,
+    "vs_tuned_dedup_p": 0.84375,
+    "vs_naive_topm": {
+      "mean_diff": 0.1049726140424998,
+      "p": 0.0078125
+    },
+    "vs_naive_all": {
+      "mean_diff": -6.086902528448009e-06,
+      "p": 0.640625
+    },
+    "vs_mmr": {
+      "mean_diff": 0.08730231256152184,
+      "p": 0.0078125
+    },
+    "vs_dedup_0.8": {
+      "mean_diff": 0.00015455822511115536,
+      "p": 0.84375
+    },
+    "vs_dedup_prov": {
+      "mean_diff": 0.0003581142532834759,
+      "p": 0.546875
+    }
+  },
+  "20%": {
+    "best_baseline": "Text dedup + provenance score",
+    "mean_diff": -0.0010241829411143108,
+    "wilcoxon_p": 0.1484375,
+    "vs_tuned_dedup_mean_diff": -0.0006345773877517043,
+    "vs_tuned_dedup_p": 0.7421875,
+    "vs_naive_topm": {
+      "mean_diff": 0.1255376888537416,
+      "p": 0.0078125
+    },
+    "vs_naive_all": {
+      "mean_diff": 0.02522747823698134,
+      "p": 0.0078125
+    },
+    "vs_mmr": {
+      "mean_diff": 0.09062394242285596,
+      "p": 0.0078125
+    },
+    "vs_dedup_0.8": {
+      "mean_diff": -0.0006345773877517043,
+      "p": 0.7421875
+    },
+    "vs_dedup_prov": {
+      "mean_diff": -0.0010241829411143108,
+      "p": 0.1484375
+    }
+  },
+  "40%": {
+    "best_baseline": "Text dedup + provenance score",
+    "mean_diff": -0.0032133540959576818,
+    "wilcoxon_p": 0.546875,
+    "vs_tuned_dedup_mean_diff": 0.0017058207539424504,
+    "vs_tuned_dedup_p": 0.7421875,
+    "vs_naive_topm": {
+      "mean_diff": 0.1384469268826941,
+      "p": 0.0078125
+    },
+    "vs_naive_all": {
+      "mean_diff": 0.036748950358261714,
+      "p": 0.0078125
+    },
+    "vs_mmr": {
+      "mean_diff": 0.06658425626108516,
+      "p": 0.0078125
+    },
+    "vs_dedup_0.8": {
+      "mean_diff": 0.003676908036290649,
+      "p": 0.546875
+    },
+    "vs_dedup_prov": {
+      "mean_diff": -0.0032133540959576818,
+      "p": 0.546875
+    }
+  },
+  "50%": {
+    "best_baseline": "Text dedup + provenance score",
+    "mean_diff": -0.003878889079935636,
+    "wilcoxon_p": 0.1953125,
+    "vs_tuned_dedup_mean_diff": -0.0028642940954461847,
+    "vs_tuned_dedup_p": 0.7421875,
+    "vs_naive_topm": {
+      "mean_diff": 0.09442158941973461,
+      "p": 0.0078125
+    },
+    "vs_naive_all": {
+      "mean_diff": 0.02342809055591992,
+      "p": 0.0546875
+    },
+    "vs_mmr": {
+      "mean_diff": 0.05534235829594824,
+      "p": 0.0078125
+    },
+    "vs_dedup_0.8": {
+      "mean_diff": 0.006483112394998498,
+      "p": 0.25
+    },
+    "vs_dedup_prov": {
+      "mean_diff": -0.003878889079935636,
+      "p": 0.1953125
+    }
+  }
+}
