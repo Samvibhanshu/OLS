@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Reproduces every number and figure in results/.   Runtime ~8-10 min on 2 CPU cores.
+# Reproduces every number and figure in results/.   Runtime about 10 min on 2 CPU cores.
 set -euo pipefail
 cd "$(dirname "$0")"
 python3 -m pytest -q tests

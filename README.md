@@ -1,4 +1,16 @@
-# Confidence-Weighted Opinion Lineage System — reference implementation & simulation suite
+# Opinion Lineage System
+
+[![tests](https://github.com/Samvibhanshu/opinion-lineage/actions/workflows/ci.yml/badge.svg)](https://github.com/Samvibhanshu/opinion-lineage/actions/workflows/ci.yml)
+
+**Confidence-weighted opinion lineage for self-correcting sentiment aggregation**: reference implementation and
+simulation suite.
+
+Social-media sentiment is usually measured by counting posts, so one opinion copied a thousand times (reposts,
+paraphrases, AI rewrites, coordinated campaigns) counts a thousand times. This project builds a graph of which post
+derives from which, weights every post by how independent it is, and reports *organic* sentiment next to the raw
+count. When a source is later found to be fake, only the posts that descend from it are re-weighted, with no model
+re-runs, and the result is exactly what a full recomputation would give. A retrieval-augmented question-answering
+layer on top answers "how do people feel about X?" from provenance-weighted evidence.
 
 Working code for the patent *"Confidence-Weighted Opinion Lineage System for Self-Correcting Sentiment Aggregation and
 Selective Provenance-Based Historical Correction"* (Indian application 202641115708): every formula of the
@@ -6,7 +18,8 @@ disclosure is implemented, tested, and benchmarked against baselines on a contro
 
 ```
 pip install -r requirements.txt
-./run_all.sh            # tests + all experiments + figures   (~3-4 min, 2 CPU cores)
+python3 -m pytest -q tests   # 27 tests, a few seconds
+./run_all.sh            # tests + all experiments + figures   (about 10 min on 2 CPU cores)
 python3 examples_demo.py   # 1-minute tour (patent's A→B→C→D example)
 python3 rag_demo.py --topic 0 --expose   # NEW: ask the lineage-aware RAG a question, then expose a compromised feed
 ```
@@ -39,11 +52,17 @@ section "Lineage-aware RAG" below, including where it does **not** beat a simple
 | Deduplication (τ=0.90) | 0.0077 | 0.0103 | 0.0249 | 0.0339 |
 | Synthetic filtering | 0.0077 | 0.0105 | 0.0255 | 0.0314 |
 | Message-level weighting | 0.0077 | 0.0124 | 0.0290 | 0.0362 |
+| Tree-normalised weighting (1/lineage size) | 0.0079 | 0.0077 | 0.0076 | 0.0088 |
 | **Proposed (inferred lineage)** | **0.0077** | **0.0076** | **0.0068** | **0.0086** |
 | Deduplication, threshold tuned on ground truth* | 0.0073 | 0.0043 | 0.0062 | 0.0078 |
 
 \*An optimistic baseline: its threshold is picked using the answer. Against it the proposed method is **comparable, not
-better**. The advantage over any fixed/untuned baseline is clear; over a perfectly-tuned dedup it is not. Full table: `e1_contamination_table.md`.
+better**. The advantage over any fixed/untuned baseline is clear; over a perfectly-tuned dedup it is not. A simple
+tree-normalised weighting (every lineage counts once, using the same inferred lineage) is close behind (0.0076 vs
+0.0068 at 40%), so most of the gain comes from knowing the lineage, not from the exact weighting formula. Full table:
+`results/e1_contamination_table.md`.
+
+![E1: error vs contamination](results/figures/e1_contamination_sweep.png)
 
 **E2 – Ablation @40%** (20 paired seeds): removing lineage structure triples the error (0.0101 → 0.0217, Wilcoxon p=0.002).
 The independence/synthetic terms add nothing measurable here (lineage-only 0.0086 and lineage+synthetic 0.0090 are
@@ -52,6 +71,8 @@ nominally *better* than the full formula, p≈0.06–0.10): the improvement come
 **E3 – Lineage inference** @40%: root accuracy 0.975, derivative precision 0.948 / recall 0.992 (F1 0.969), correct-lineage accuracy 0.940.
 
 **E4 – Selective Dependency Rollback, 50,000 records (10k roots / 40k derivatives)**
+
+![E4: selective rollback vs full reprocessing](results/figures/e4_rollback.png)
 
 | Scenario | Events | Records touched | Model rows re-run (sel. / full) | Time sel. / dense / full-reproc. | max \|Δ S_org\| vs full |
 |---|---|---|---|---|---|
@@ -162,7 +183,7 @@ Only when every copy is disguised does lineage-aware RAG beat the dedup + proven
 
 ## Honest limitations — read before quoting any number
 
-1. **Synthetic data, not TweetEval.** The sandbox cannot download datasets, so the stream is simulated (embeddings from a
+1. **Synthetic data, not a real dataset such as TweetEval.** The stream is simulated (embeddings from a
    fixed random encoder, sentiment classifier ≈ 70% accurate, provenance/synthetic scores drawn from Beta
    distributions). Absolute errors therefore differ from the patent's (e.g. its 0.078 floor); only the *relative*
    behaviour is comparable. Swap in real embeddings/classifier via `Encoder` / `SentimentModel` (same interface).
@@ -175,4 +196,5 @@ Only when every copy is disguised does lineage-aware RAG beat the dedup + proven
 6. "Amplification mass" is defined here as N − ΣW (the patent does not give a formula).
 
 ## Layout
-`opinion_lineage/` library (`rag/` = the RAG layer) · `tests/` 27 pytest tests (12 for the framework, 15 for the RAG layer: determinism, topic precision, formula, grounding, one-slot-per-lineage, in-place retraction ≡ dense recomputation with zero model calls, abstention, hallucinated-citation rejection, precise invalidation) · `experiments/` E1–E7 (patent suite) and R1–R6 (`exp6`–`exp9`, RAG) · `rag_demo.py` · `rag_common.py` · `results/` CSV/JSON/figures/log.
+
+`opinion_lineage/` library (`rag/` = the RAG layer) · `tests/` 27 pytest tests (12 for the framework, 15 for the RAG layer: determinism, topic precision, formula, grounding, one-slot-per-lineage, in-place retraction ≡ dense recomputation with zero model calls, abstention, hallucinated-citation rejection, precise invalidation) · `experiments/` E1–E7 (patent suite) and R1–R6 (`exp6`–`exp9`, RAG) · `examples_demo.py`, `rag_demo.py` · `results/` CSV/JSON/log, `results/figures/` PNG.
